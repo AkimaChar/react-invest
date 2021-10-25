@@ -1,0 +1,431 @@
+@media (max-width: 1200px) {
+  .profile_settings-title {
+    width: 100%;
+  }
+  ._hr {
+    width: 20vw;
+  }
+  input[type="file"] {
+    width: 120px;
+    height: 120px;
+  }
+  .profile_avatar {
+    width: 120px;
+    height: 120px;
+    background-size: 120px 120px;
+    border-radius: 12.5px;
+  }
+  h1 {
+    margin-left: 24px;
+    margin-right: 24px;
+    font-size: 33px;
+  }
+  .profile-main_settings {
+    width: 595px;
+    max-width: 595px;
+  }
+  .profile-main_settings:first-child {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .short_info {
+    margin-top: 12px;
+  }
+  .creation_date span {
+    font-size: 9px;
+    line-height: 192%;
+  }
+
+  .creation_date {
+    font-size: 9px;
+    line-height: 192%;
+  }
+
+  .profile_avatar div {
+    border-radius: 12.5px;
+  }
+
+  .profile_entrance-data {
+    width: 340px;
+    height: auto;
+    /* height: 177px; */
+    border-radius: 24px;
+    padding: 23px;
+  }
+
+  .profile_entrance-data label {
+    border-radius: 24px;
+    padding: 14px 24px;
+    width: 100%;
+    height: auto;
+  }
+  .profile_entrance-data label:first-of-type {
+    margin-bottom: 16px;
+  }
+
+  .profile_settings-container > hr:last-child {
+    width: 647px;
+    margin: 30px 0;
+  }
+  label::before,
+  label::before {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  input[type="text"],input[type=password] {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  #saveImg   {
+    font-size: 13px;
+  }
+  .profile_follow-container {
+    width: 646px;
+    border-radius: 24px;
+    padding: 20px 30px;
+  }
+  .profile_follow-container > span:first-of-type {
+    font-size: 17px;
+    line-height: 147%;
+  }
+  .profile_aim {
+    margin-top: 48px;
+    margin-bottom: 12px;
+  }
+
+  .profile_aim,
+  .profile_description {
+    width: 595px;
+    /* height: 8.29vw; */
+    height: auto;
+    border-radius: 24px;
+    padding: 16px 23px;
+  }
+  .profile_follow-container {
+    margin-bottom: 24px;
+  }
+  .title {
+    font-size: 18px;
+    line-height: 139%;
+  }
+  #text-counter_1,
+  #text-counter_2 {
+    height: 100%;
+  }
+  .profile_subscription {
+    width: 200px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .profile-authors {
+    margin-top: 12px;
+  }
+  .author-link {
+    height: 80px;
+    border-radius: 24px;
+    margin-bottom: 11px;
+    padding-left: 15px;
+  }
+  .symbols_num {
+    line-height: 139%;
+  }
+  .profile-authors .avatar-img {
+    width: 38px;
+    height: 38px;
+  }
+  .profile-authors .investor-profile-link {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 !important;
+  }
+  .profile-authors .about-investor {
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  ._hr {
+    width: 20vw;
+  }
+  input[type="file"] {
+    width: 15.625vw;
+    height: 15.625vw;
+  }
+  .profile_avatar {
+    width: 15.625vw;
+    height: 15.625vw;
+    background-size: 15.625vw 15.625vw;
+    border-radius: 1.6vw;
+  }
+  h1 {
+    margin-left: 3.125vw;
+    margin-right: 3.125vw;
+    font-size: 4.3vw;
+  }
+  .profile-main_settings {
+    width: 75vw;
+    max-width: 75vw;
+  }
+  .profile-main_settings:first-child {
+    font-size: 1.7vw;
+    line-height: 2vw;
+  }
+  .short_info {
+    margin-top: 1.6vw;
+  }
+  .creation_date span {
+    font-size: 1.17vw;
+  }
+
+  .creation_date {
+    font-size: 1.17vw;
+  }
+
+  .profile_avatar div {
+    border-radius: 1.6vw;
+  }
+
+  .profile_entrance-data {
+    width: 44vw;
+    border-radius: 3.125vw;
+    padding: 3vw;
+  }
+
+  .profile_entrance-data label {
+    border-radius: 3.125vw;
+    padding: 1.8vw 3.125vw;
+  }
+  .profile_entrance-data label:first-of-type {
+    margin-bottom: 2vw;
+  }
+
+  .profile_settings-container > hr:last-child {
+    width: 80vw;
+    margin: 3.9vw 0;
+  }
+  label::before,
+  label::before {
+    font-size: 1.3vw;
+    line-height: 1.6vw;
+  }
+  input[type="text"],input[type=password] {
+    font-size: 1.7vw;
+    line-height: 2vw;
+  }
+  .profile_follow-container {
+    width: 83vw;
+    border-radius: 3.125vw;
+    padding: 2.6vw 3.9vw;
+  }
+  .profile_follow-container > span:first-of-type {
+    font-size: 2.2vw;
+  }
+  .profile_aim {
+    margin-top: 6.25vw;
+    margin-bottom: 1.6vw;
+  }
+
+  .profile_aim,
+  .profile_description {
+    width: 75vw;
+    border-radius: 3.125vw;
+    padding: 2vw 2.9vw;
+  }
+  .profile_follow-container {
+    margin-bottom: 3.125vw;
+  }
+  .title {
+    font-size: 2.3vw;
+  }
+  .profile_subscription {
+    width: 26vw;
+    font-size: 1.7vw;
+    line-height: 2vw;
+  }
+  .profile-authors {
+    margin-top: 1.6vw;
+  }
+  .author-link {
+    height: 10.5vw;
+    border-radius: 3.125vw;
+    margin-bottom: 1.4vw;
+    padding-left: 1.9vw;
+  }
+}
+
+@media (max-width: 640px) {
+  .profile_settings-title {
+    position: relative;
+  }
+  .profile_settings-title ._hr {
+    width: 400px !important;
+    position: absolute;
+    margin: 0 !important;
+    top: 9vw;
+  }
+  .profile_settings-title ._hr:first-of-type {
+    left: 90%;
+  }
+  .profile_settings-title ._hr:last-of-type {
+    right: 90%;
+  }
+  .profile_settings-container {
+    width: 100%;
+  }
+
+  input[type="file"] {
+    width: 21vw;
+    height: 21vw;
+  }
+  .profile_avatar {
+    width: 21vw;
+    height: 21vw;
+    background-size: 21vw 21vw;
+    border-radius: 4.34vw;
+  }
+  h1 {
+    margin-left: 3.125vw;
+    margin-right: 3.125vw;
+    font-size: 8.7vw;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    display: block;
+    line-height: 18vw;
+    margin-bottom: 4.3vw;
+  }
+  .profile-main_settings {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .profile-main_settings:first-child {
+    font-size: 4.34vw;
+    line-height: 5.4vw;
+  }
+  .profile-main_settings > div:first-of-type {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 6.7vw;
+    align-items: center;
+  }
+  #form1 {
+    margin-right: 5vw;
+  }
+  .short_info {
+    margin: 0;
+    height: fit-content;
+  }
+  .creation_date span {
+    font-size: 2.8vw;
+    margin-left: 1.3vw;
+  }
+
+  .creation_date {
+    font-size: 2.8vw;
+    margin: 0;
+    margin-top: 1.3vw;
+  }
+
+  .profile_avatar div {
+    border-radius: 4.34vw;
+  }
+
+  .profile_entrance-data {
+    width: 100%;
+    border-radius: 8.7vw;
+    padding: 7.8vw 6vw;
+  }
+
+  .profile_entrance-data label {
+    border-radius: 8.7vw;
+    padding: 4.5vw 6vw;
+  }
+  .profile_entrance-data label:first-of-type {
+    margin-bottom: 5.6vw;
+  }
+
+  label::before,
+  label::before {
+    font-size: 3.2vw;
+    line-height: 4vw;
+  }
+  input[type="text"],input[type=password] {
+    font-size: 4.43vw;
+    line-height: 5.4vw;
+  }
+  .profile_follow-container {
+    width: 100%;
+    border-radius: 8.7vw;
+    padding: 6.3vw 3.5vw;
+  }
+  .profile_follow-container > span:first-of-type {
+    font-size: 3.7vw;
+    margin-left: 5vw;
+  }
+  .profile_aim {
+    margin-top: 6.3vw;
+    margin-bottom: 3.9vw;
+  }
+  .profile_text-container {
+    width: 100%;
+  }
+  .profile_aim,
+  .profile_description {
+    width: 100%;
+    border-radius: 8.7vw;
+    padding: 6.5vw 8.5vw;
+  }
+  .profile_follow-container {
+    margin-bottom: 3.125vw;
+  }
+  .aim_block-title {
+    flex-direction: column;
+    margin-bottom: 4.5vw;
+  }
+  .title {
+    font-size: 3.9vw;
+    margin-bottom: 4vw;
+  }
+  .profile_subscription {
+    width: 29vw;
+    font-size: 2.8vw;
+    line-height: 2.8vw;
+    position: static;
+    border-radius: 8.7vw;
+    padding: 4.2vw;
+    padding-top: 14vw;
+    border: none;
+    background-size: 8vw;
+    background-position: center 4.2vw;
+    outline: none;
+  }
+  .profile-authors {
+    margin-top: 4.5vw;
+  }
+  .author-link {
+    height: auto;
+    border-radius: 8.7vw;
+    margin-bottom: 2.6vw;
+    padding-left: 4.7vw;
+  }
+  .author-link:last-of-type {
+    margin: 0;
+  }
+  .symbols_num {
+    font-size: 3.9vw;
+  }
+  .profile-authors .avatar-img {
+    width: 10.4vw;
+    height: 10.4vw;
+    margin-right: 2.2vw;
+  }
+  .profile-authors .investor-profile-link {
+    font-size: 4.34vw;
+    line-height: 5.4vw;
+    margin: 0 !important;
+  }
+  .profile-authors .about-investor {
+    width: auto;
+  }
+}

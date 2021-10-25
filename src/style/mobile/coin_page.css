@@ -1,0 +1,729 @@
+@charset "UTF-8";
+@media (min-width: 641px) and (max-width: 1200px) {
+  body {
+    margin-left: 6.25vw;
+  }
+  body h1, body h2 {
+    font-size: 4.7vw;
+    line-height: 8.5vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .coin-page_title>div:first-of-type {
+    width: 100%;
+  }
+  .coin-page_title ._hr {
+    width: 13.6vw;
+  }
+  body .wrap_container {
+    width: 90vw;
+  }
+  body .coin_status {
+    padding: 0;
+  }
+  body .coin_status .coin {
+    width: auto;
+    height: auto;
+    background-image: none;
+    margin: 0;
+  }
+  body .coin_status .coin span {
+    font-size: 2vw;
+    line-height: 2vw;
+    margin-left: 1.5vw;
+  }
+  body .coin_status .coin img {
+    width: 6vw;
+    height: 6vw;
+  }
+  body .coin_status .last-update_container {
+    font-size: 1.8vw;
+    line-height: 2vw;
+    margin-left: 10vw;
+  }
+  body .coin_status .coin-price {
+    font-size: 2vw;
+    line-height: 2vw;
+  }
+  body .coin_status .coin-price span {
+    font-size: 1.5vw;
+    line-height: 2vw;
+    margin-right: 1vw;
+  }
+  body .prediction {
+    width: auto;
+    height: auto;
+    padding: 3vw 3.5vw;
+    margin-top: 2.6vw;
+    margin-bottom: 2.6vw;
+  }
+  body .prediction .pred_week, body .prediction .pred_month, body .prediction .pred_quad, body .prediction .pred_year {
+    font-size: 1.3vw;
+    line-height: 2vw;
+  }
+  body .prediction .pred_week span, body .prediction .pred_month span, body .prediction .pred_quad span, body .prediction .pred_year span {
+    margin-bottom: 1vw;
+    font-size: 2.3vw;
+  }
+  body .last_deals-body {
+    margin: 0 auto;
+  }
+  body .last_deals-body .investors_container {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8vw;
+    padding: 2vw;
+  }
+  body .last_deals-body .investors_container .columns_names {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 2vw;
+    padding: 0 2.7vw;
+    margin-bottom: 2vw;
+  }
+  body .last_deals-body .investors_container .columns_names>span {
+    font-size: 2vw;
+    line-height: 2.3vw;
+    margin: 0;
+  }
+  body .last_deals-body .investors_container .columns_names>span:nth-of-type(4) {
+    display: none;
+  }
+  body .last_deals-body .investors_container .columns_names>span:nth-of-type(1) {
+    width: 32%;
+  }
+  body .last_deals-body .investors_container .columns_names>span:nth-of-type(2) {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    width: 33%;
+    text-align: center;
+  }
+  body .last_deals-body .investors_container .columns_names>span:nth-of-type(3) {
+    width: 33%;
+    text-align: center;
+  }
+  body .last_deals-body .investors_container .deal_link {
+    width: 100%;
+    height: auto;
+    padding: 1.5vw 2.7vw;
+    margin-bottom: 3vw;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    position: relative;
+  }
+  body .last_deals-body .investors_container .deal_link:last-of-type {
+    margin: 0;
+  }
+  body .last_deals-body .investors_container .deal_link>* {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  body .last_deals-body .investors_container .columns_names .last-deal_date {
+    display: none;
+  }
+  body .last_deals-body .investors_container .deal_link .com_container {
+    display: flex;
+    flex-direction: column;
+  }
+  body .last_deals-body .investors_container .deal_link .com_container p {
+    font-size: 1.5vw;
+    width: 100%;
+  }
+  body .last_deals-body .investors_container .deal_link .com_container::before {
+    content: "Комментарий:";
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 1.5vw;
+    opacity: 0.3;
+    width: 100%;
+  }
+  body .last_deals-body .investors_container .deal_link .security_container {
+    -webkit-box-ordinal-group: -9;
+    -ms-flex-order: -10;
+    order: -10;
+    width: 33%;
+    font-size: 2.5vw;
+    line-height: 3vw;
+  }
+  body .last_deals-body .investors_container .deal_link .security_container img {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+  }
+  body .last_deals-body .investors_container .deal_link .deal_type {
+    width: 33%;
+  }
+  body .last_deals-body .investors_container .deal_link .deal_type span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: 1.7vw;
+    line-height: 2vw;
+  }
+  body .last_deals-body .investors_container .deal_link .pred_container {
+    width: 33%;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+    height: auto;
+    background: rgba(255, 255, 255, 0);
+    font-size: 1.8vw;
+    line-height: 7vw;
+    position: relative;
+    padding: 0 9vw;
+  }
+  body .last_deals-body .investors_container .deal_link .pred_container span {
+    font-size: 1.9vw;
+    line-height: 2vw;
+    margin-right: 0.5vw;
+  }
+  body .last_deals-body .investors_container .deal_link .pred_container::before {
+    position: absolute;
+    content: "";
+    top: 1vw;
+    width: 70%;
+    height: 5vw;
+    left: 15%;
+    background: rgba(255, 255, 255, 0.015);
+    border-radius: 2vw;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  body .last_deals-body .investors_container .deal_link .pred_container:hover::before {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  body .last_deals-body .investors_container .deal_link .deal-date_container {
+    width: 33%;
+    left: 7vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    position: relative;
+  }
+  body .last_deals-body .investors_container .deal_link .deal-date_container span {
+    display: block;
+    text-align: center;
+    font-size: 1.8vw;
+    line-height: 2.3vw;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+  body .last_deals-body .investors_container .deal_link .open-text-modal {
+    display: none;
+  }
+  body .last_deals-body .investors_container .deal_link .deal-date_container::before {
+    font-family: Montserrat;
+    font-weight: normal;
+    position: absolute;
+    content: "Дата:";
+    line-height: 2.3vw;
+    top: -1px;
+    left: -7vw;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  body .last_deals-body .investors_container .deal_link .leave-comment_container {
+    position: absolute;
+    bottom: 1.5vw;
+    right: 2.7vw;
+    width: calc(33% - 2.7vw);
+    height: 10vw;
+    background-image: url(../img/comm.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 50%;
+  }
+  body .footer {
+    margin-top: 5.8vw;
+    margin-bottom: 5.8vw;
+  }
+  body .footer span {
+    font-weight: 300;
+    font-size: 2.2vw;
+    line-height: 2.8vw;
+    color: #ffffff;
+    opacity: 0.2;
+    margin-bottom: 0.7vw;
+  }
+  body .footer a {
+    text-decoration: none;
+    font-size: 2.7vw;
+    line-height: 3vw;
+    color: #00a3ff;
+  }
+  span.last-deal_comm {
+    display: none;
+  }
+}
+
+@media (min-width: 641px) {
+  .burger {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding-top: 24vw;
+  }
+  .coin-page_title {
+    margin-top: 5vw !important;
+  }
+  .graphs-options>button {
+    font-size: 2vw;
+    margin-left: 4vw;
+  }
+  body .last_deals-body {
+    width: 85vw !important;
+  }
+  body h1, body h2 {
+    font-weight: 300;
+    font-size: 8vw;
+    line-height: 18.5vw;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    margin: 0 auto;
+    text-align: center;
+  }
+  body .coin-page_title {
+    margin-bottom: 15vw;
+  }
+  body .coin-page_title hr {
+    display: none;
+  }
+  body aside.aside_container {
+    position: absolute;
+    width: 100vw;
+    height: 24vw;
+    padding: 0 5.2vw;
+    background-color: transparent;
+  }
+  body aside.aside_container .aside-body {
+    width: 100%;
+    height: 12.17vw;
+    margin: 6.3vw 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  body aside.aside_container .aside-body a {
+    font-size: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 1;
+    margin: 0;
+    width: 7vw;
+    height: 7vw;
+    position: relative;
+    -webkit-transform: translateY(-50vw);
+    transform: translateY(-50vw);
+  }
+  .graphs_container {
+    width: 82vw !important;
+    height: 33.96vw !important;
+  }
+  .coin_graphs_container>div {
+    border-radius: 20px !important;
+  }
+  body aside.aside_container .aside-body a:last-of-type {
+    display: none;
+  }
+  body aside.aside_container .aside-body a.active {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  body aside.aside_container .aside-body a svg {
+    margin: 0;
+    opacity: 1;
+  }
+  body aside.aside_container .aside-body a svg>path {
+    fill: #fff;
+    opacity: 1;
+  }
+  body aside.aside_container .aside-body svg {
+    width: 12.17vw;
+    height: 12.17vw;
+    margin: 0;
+  }
+  body aside.aside_container .aside-body .burger img {
+    width: 12.17vw;
+    height: 12.17vw;
+  }
+  body .wrap_container {
+    width: 90vw;
+  }
+  body .last_deals-body .investors_container .deal_link .com_container p {
+    font-size: 2.5vw;
+    width: 100%;
+    line-height: 3.5vw;
+    margin-top: 0;
+  }
+  
+  .columns_names span {
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  body .last_deals-body .investors_container .deal_link .com_container::before {
+    content: "Комментарий: ";
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3vw;
+    line-height: 3.5vw;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 1vw;
+  }
+  body .last_deals-body .investors_container .deal_link .com_container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5vw;
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  body .coin_status {
+    padding: 0;
+    position: relative;
+    margin-bottom: 8.7vw;
+  }
+  body .coin_status .coin {
+    width: auto;
+    height: auto;
+    background-image: none;
+    margin: 0;
+  }
+  body .coin_status .coin span {
+    font-weight: 500;
+    font-size: 5.4vw;
+    line-height: 6.5vw;
+    margin-left: 3.5vw;
+  }
+  body .coin_status .last-update_container {
+    position: absolute;
+    font-weight: 200;
+    font-size: 4.34vw;
+    line-height: 5.2vw;
+    margin: 0;
+    color: #ffffff;
+    opacity: 0.4;
+    left: 18.5vw;
+    top: -15.87vw;
+  }
+  body .coin_status .last-update_container::before, body .coin_status .last-update_container::after {
+    position: absolute;
+    content: "";
+    top: calc((100% - 1px) / 2);
+    width: 26vw;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  body .coin_status .last-update_container::before {
+    right: 105%;
+  }
+  body .coin_status .last-update_container::after {
+    left: 105%;
+  }
+  body .coin_status .coin-price {
+    font-weight: 500;
+    font-size: 5.4vw;
+    line-height: 6.5vw;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 40%;
+  }
+  body .coin_status .coin-price span {
+    margin: 0;
+    font-weight: normal;
+    font-size: 3.2vw;
+    line-height: 153%;
+    color: #ffffff;
+    opacity: 0.4;
+    width: 100%;
+  }
+  body .prediction {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 7.6vw 13vw;
+    margin-bottom: 4.3vw;
+    border-radius: 8.7vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 6.5vw 21vw;
+    position: relative;
+  }
+  body .prediction .pred_week, body .prediction .pred_month, body .prediction .pred_quad, body .prediction .pred_year {
+    -ms-grid-column-align: center;
+    justify-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    font-weight: 500;
+    font-size: 2.8vw;
+    line-height: 131%;
+    text-align: center;
+  }
+  body .prediction .pred_week span, body .prediction .pred_month span, body .prediction .pred_quad span, body .prediction .pred_year span {
+    margin-bottom: 2vw;
+    font-weight: 500;
+    font-size: 5.4vw;
+    line-height: 6.5vw;
+  }
+  body .prediction::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.07);
+    left: calc((100% - 1px) / 2);
+  }
+  body .last_deals-body {
+    margin: 0 auto;
+  }
+  body .last_deals-body .investors_container {
+    border-radius: 8.7vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    padding: 2.4vw;
+    padding-top: 4.34vw;
+  }
+  body .last_deals-body .investors_container .columns_names {
+    width: 100%;
+    margin: 0;
+    padding: 0 6.5vw;
+    margin-bottom: 4.34vw;
+  }
+  body .last_deals-body .investors_container .columns_names>span {
+    font-weight: 300;
+    font-size: 2.8vw;
+    line-height: 3.5vw;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0;
+  }
+  body .last_deals-body .investors_container .columns_names>span:nth-of-type(3), body .last_deals-body .investors_container .columns_names>span:nth-of-type(4) {
+    display: none;
+  }
+  body .last_deals-body .investors_container .columns_names>span:nth-of-type(1) {
+    width: 70%;
+  }
+  body .last_deals-body .investors_container .columns_names>span:nth-of-type(2) {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    width: 30%;
+  }
+  body .last_deals-body .investors_container .deal_link {
+    border-radius: 8.7vw;
+    width: 100%;
+    height: auto;
+    padding: 5.2vw 6.5vw;
+    margin-bottom: 9.5vw;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    position: relative;
+  }
+  body .last_deals-body .investors_container .deal_link:last-of-type {
+    margin: 0;
+  }
+  body .last_deals-body .investors_container .deal_link>* {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  body .last_deals-body .investors_container .deal_link .security_container {
+    -webkit-box-ordinal-group: -9;
+    -ms-flex-order: -10;
+    order: -10;
+    width: 70%;
+    font-size: 4.3vw;
+    line-height: 5.2vw;
+    padding-bottom: 4.5vw;
+    margin-bottom: 8vw;
+    position: relative;
+  }
+  body .last_deals-body .investors_container .deal_link .security_container img {
+    width: 10.4vw;
+    height: 10.4vw;
+    border-radius: 50%;
+    margin-right: 2.8vw;
+  }
+  body .last_deals-body .investors_container .deal_link .security_container::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 76.1vw;
+    background: rgba(255, 255, 255, 0.05);
+    left: -6.5vw;
+    bottom: 0;
+  }
+  body .last_deals-body .investors_container .deal_link .deal_type {
+    -webkit-box-ordinal-group: -8;
+    -ms-flex-order: -9;
+    order: -9;
+    width: 30%;
+    padding-bottom: 4.5vw;
+    margin-bottom: 8vw;
+  }
+  body .last_deals-body .investors_container .deal_link .deal_type span {
+    display: block;
+    width: 100%;
+    margin: 0;
+    font-size: 3.2vw;
+    line-height: 5.4vw;
+  }
+  body .last_deals-body .investors_container .deal_link .pred_container {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    text-align: left;
+    width: 100%;
+    -webkit-box-ordinal-group: -7;
+    -ms-flex-order: -8;
+    order: -8;
+    height: auto;
+    background: rgba(255, 255, 255, 0);
+    font-size: 3.2vw;
+    line-height: 167%;
+    padding-bottom: 4.5vw;
+    margin-bottom: 1vw;
+    position: relative;
+  }
+  body .last_deals-body .coin-page-deals {
+    width: 100%;
+  }
+  body .last_deals-body .investors_container .deal_link .pred_container span {
+    font-size: 3.2vw;
+    line-height: 167%;
+    margin-right: 0.5vw;
+  }
+  .columns_names span {
+    color: rgba(255, 255, 255, 0.85) !important;
+    opacity: 1;
+  }
+  body .last_deals-body .investors_container .deal_link .pred_container::before {
+    font-family: Montserrat;
+    font-weight: 200;
+    position: absolute;
+    content: "Прогноз";
+    font-size: 2.8vw;
+    line-height: 3.5vw;
+    top: -4vw;
+    color: white;
+  }
+  body .last_deals-body .investors_container .deal_link .pred_container::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 76.1vw;
+    background: rgba(255, 255, 255, 0.05);
+    left: -6.5vw;
+    bottom: 0;
+  }
+  body .last_deals-body .investors_container .deal_link .deal-date_container {
+    width: 100%;
+    position: relative;
+  }
+  body .last_deals-body .investors_container .deal_link .deal-date_container span {
+    display: block;
+    width: 100%;
+    font-weight: 500;
+    font-size: 3.2vw;
+    line-height: 5vw;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  body .last_deals-body .investors_container .deal_link .deal-date_container::before {
+    font-family: Montserrat;
+    font-weight: 200;
+    position: absolute;
+    content: "Дата";
+    font-size: 2.8vw;
+    line-height: 3.5vw;
+    top: -4vw;
+    color: white;
+  }
+  body .last_deals-body .investors_container .deal_link .leave-comment_container {
+    position: absolute;
+    bottom: -3.5vw;
+    right: -0.8vw;
+    width: 29.8vw;
+    height: 27.17vw;
+    background-image: url(../img/comm-white.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 40%;
+    border-radius: 8.7vw;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-backdrop-filter: blur(4.35vw);
+    backdrop-filter: blur(4.35vw);
+    z-index: 100;
+  }
+  body .last_deals-body .investors_container .deal_link .leave-comment_container:hover {
+    background-color: #00a3ff;
+    border: 1px solid #00a3ff;
+  }
+  body .footer {
+    margin-top: 5.8vw;
+    margin-bottom: 5.8vw;
+  }
+  body .footer span {
+    font-weight: 300;
+    font-size: 2.2vw;
+    line-height: 2.8vw;
+    color: #ffffff;
+    opacity: 0.2;
+    margin-bottom: 0.7vw;
+  }
+  body .footer a {
+    text-decoration: none;
+    font-size: 2.7vw;
+    line-height: 3vw;
+    color: #00a3ff;
+  }
+}

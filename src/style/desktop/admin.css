@@ -1,0 +1,809 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+body.admin_page {
+    background-image: url(../img/adminBackG.jpg);
+    background-repeat: no-repeat;
+}
+
+._container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.createDeal:hover {
+    text-decoration: underline;
+}
+
+.createDeal{
+    margin-top: -1vw;
+    margin-bottom: 1vw;
+}
+
+._hr {
+    width: 36%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.07);
+    margin: auto 0;
+}
+
+.history_title ._hr {
+    width: 80%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.07);
+    margin: auto 0;
+}
+
+.history_title,
+.h1_title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+}
+
+._h1 {
+    font-family: Rany;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3.13vw;
+    line-height: 4.43vw;
+    /* identical to box height, or 142% */
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+h1 {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+/*html body.admin_page {
+    background-image: url('../img/adminBG.png') !important;
+    background-repeat: no-repeat;
+    background-position: center 0 ;
+}*/
+
+.admin_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.admin_container>div {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.89vw;
+    line-height: 1.30vw;
+    /* or 147% */
+    color: #FFFFFF;
+}
+
+.profile_followers span,
+.profile_success span,
+.profile_profit span {
+    font-weight: 500;
+    font-family: Montserrat;
+    font-size: 0.89vw;
+    line-height: 1.30vw;
+    color: #00A3FF;
+}
+
+.profile_followers,
+.profile_success,
+.profile_profit {
+    width: 12.71vw;
+    height: 6.61vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-block {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 40px 40px 0px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.coins_block {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 40px;
+    position: absolute;
+    right: 10vw;
+}
+
+.coin_row:nth-of-type(2) {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.portfolio_admin-title {
+    width: 100%;
+}
+
+.coin_row {
+    width: 12.76vw;
+    height: 4.64vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a,
+a:focus,
+a:visited {
+    outline: none;
+    text-decoration: none;
+}
+
+.btc:before,
+.eth:before {
+    content: '';
+    height: 2.76vw;
+    width: 2.76vw;
+    position: absolute;
+    margin-top: -.6vw;
+    margin-left: -3.5vw;
+    background-size: contain;
+    background-image: url('../img/btc.png');
+}
+
+.eth,
+.btc {
+    margin-left: 3.5vw;
+}
+
+.coin_row>a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.30vw;
+    line-height: 1.56vw;
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #00A3FF;
+}
+
+.profile_success {
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+label[for=search_input] {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.82vw;
+    line-height: 2.24vw;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.search_input {
+    background: none;
+    border: none;
+    width: 14.69vw;
+    height: 3.49vw;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.04vw;
+    line-height: 1.30vw;
+    color: #FFFFFF;
+    padding-left: 2.5vw;
+    background-image: url(../img/carbon_search.png);
+    background-repeat: no-repeat;
+    background-position: 1vw center;
+    margin-left: 2vw;
+}
+
+.search_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+}
+
+.admin_coin-list,
+.history_coin-list {
+    background: rgba(255, 255, 255, 0.02);
+    width: 100%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.history_coin-list {
+    background: none;
+}
+
+.columns_names>span {
+    display: block;
+    margin: 0;
+}
+
+.columns_names {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    margin-top: 1vw;
+}
+
+.admin_coin_plank {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.02);
+    width: 98%;
+    border-radius: 40px;
+    margin: auto;
+    padding: 1.5vw 1.5vw;
+    margin-bottom: 2vw;
+    transition: .2s ease;
+}
+
+.admin_coin_plank>*>*>* {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.04vw;
+    line-height: 1.56vw;
+}
+
+.coin_percentage>input[type=text],
+.coin_mount>input[type=text] {
+    background: none;
+    border: none;
+    width: 4vw;
+    padding: 0;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.04vw;
+    line-height: 1.56vw;
+    /* identical to box height, or 150% */
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+}
+
+#minusM:hover,
+#minus:hover,
+#plus:hover,
+#plusM:hover {
+    cursor: pointer;
+    outline: none;
+}
+
+#minusM,
+#minus,
+#plus,
+#plusM {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3vw;
+    line-height: 1.56vw;
+    /* identical to box height, or 125% */
+    color: #00A3FF;
+}
+
+#tooltip {
+    transition: 0.5s ease;
+    font-family: Montserrat;
+    font-weight: 200;
+    z-index: 9999;
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 0px;
+    border: 1px solid #00A3FF9f;
+    border-radius: 40px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+}
+
+input[type=radio]~label {
+    transition: .2s ease;
+}
+
+div label[for=Decrease] {
+    margin-left: 0.4vw;
+}
+
+div label[for=Increase] {
+    margin-right: 0.3vw;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio]:checked~label {
+    color: #00A3FF !important;
+}
+
+form.admin_coin_plank {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.04vw;
+    line-height: 1.56vw;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #00A3FF;
+}
+
+a {
+    transition: .2s ease !important;
+}
+
+.security_container>img {
+    margin-right: 1vw;
+}
+
+.security_container {
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    margin-top: 2vw;
+}
+
+.coin_action,
+.forecast_action,
+.coin_forecast {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coin_forecast>*,
+.coin_forecast>*>*>* {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.04vw;
+    line-height: 1.56vw;
+}
+
+.coin_action {
+    width: 14.07vw;
+    padding: 1.2vw 2.2vw;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 40px;
+}
+
+.edit {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.04vw;
+    line-height: 1.30vw;
+    /* identical to box height, or 125% */
+    color: #00A3FF;
+}
+
+.coin_forecast {
+    padding: 1.2vw 2.5vw;
+    width: 40vw;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 40px;
+}
+
+.coin_price,
+.coin_sum {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.04vw;
+    line-height: 1.30vw;
+    /* identical to box height, or 125% */
+    color: #FFFFFF;
+}
+
+html[lang=ru] body.admin_page div.columns_names>span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.78vw;
+    line-height: 0.94vw;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.history_container {
+    width: 100%;
+}
+
+div.columns_names {
+    padding: 0 3vw;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vw;
+}
+
+body.admin_page {
+    margin-left: .2vw;
+}
+
+body.admin_page span.coin_name {
+    margin-right: 4.3vw !important;
+}
+
+.admin_coin-list div.columns_names span.admin_coin_cost {
+    margin-right: 2.5vw;
+}
+
+.admin_coin-list div.columns_names span.admin_coin_mount {
+    margin-right: 4vw;
+}
+
+.admin_coin-list div.columns_names span.admin_coin_sum {
+    margin-right: 8.30vw;
+}
+
+.admin_coin-list div.columns_names span.admin_coin_pred {
+    margin-right: 11.7vw;
+}
+
+.admin_coin-list div.columns_names span.admin_coin_com {
+    margin-right: 15.7vw;
+}
+
+.history_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.history-coin_comm p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.94vw;
+    line-height: 1.20vw;
+    /* identical to box height, or 153% */
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+div.admin_coin_plank {
+    padding: 1.5vw 4vw;
+    margin-bottom: 1vw;
+}
+
+.admin_coin_plank:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.history_coin-list div.columns_names {
+    margin-bottom: 2vw;
+    margin-left: 2.8vw;
+}
+
+.history-coin_action span.buy {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.04vw;
+    line-height: 1.30vw;
+}
+
+.history_coin-list div.columns_names span.coin_name {
+    margin-right: 12.5vw !important
+}
+
+.history_coin-list div.columns_names span.admin_coin_cost {
+    margin-right: 13vw;
+}
+
+.history_coin-list div.columns_names span.admin_coin_com {
+    margin-left: 3.5vw;
+    margin-right: 14.2vw;
+}
+
+.history_coin-list div.columns_names span.admin_coin_action {
+    margin: 0;
+}
+
+.history-coin_forecast p span,
+.coin_price span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.04vw;
+    line-height: 1.56vw;
+    /* or 150% */
+    color: #00A3FF;
+}
+
+select {
+    background: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    color: #FFFFFF;
+    border: none;
+}
+
+.forecast_action>div>label,
+.coin_action>div>label {
+    margin-bottom: 0;
+}
+
+select option {
+    color: black;
+}
+
+.dropdown-select {
+    left: inherit;
+}
+
+#multiple-select-container-1>.form-control:first-of-type {
+    background: none;
+    border: none;
+    width: 14.69vw;
+    height: 3.49vw;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.04vw;
+    line-height: 1.30vw;
+    color: #FFFFFF;
+    padding-left: 2.5vw;
+    background-image: url(../img/carbon_search.png);
+    background-repeat: no-repeat;
+    background-position: 1vw center;
+    margin-left: 2vw;
+}
+
+div.dropdown-select>div.p-2>input.form-control {
+    background: none;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.04vw;
+    line-height: 1.30vw;
+    color: #FFFFFF;
+    padding-left: 2.5vw;
+    background-image: url(../img/carbon_search.png);
+    background-repeat: no-repeat;
+    background-position: 1vw center;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.list-group {
+    border-radius: 0 0 40px 40px;
+}
+
+.admin_container {
+    margin-left: 8.2vw;
+}
+
+.content {
+    margin-left: 1vw;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.open-com {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2vw;
+    width: 2vw;
+    transition: .2s ease;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2vw;
+    background-image: url(../img/comm.svg);
+}
+
+.open-com::before {
+    content: '';
+    position: absolute;
+    height: 4.53vw;
+    width: 6vw;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.close-com::before {
+    content: '×';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    color: #E56969;
+    transition: .2s ease;
+}
+
+.close-com {
+    background: none;
+}
+
+.history_container div.columns_names span.admin_coin_cost {
+    margin-right: 11.8vw;
+}
+
+.history_container div.columns_names span.admin_coin_mount {
+    margin-right: 2.5vw;
+}
+
+.history_container div.columns_names span.admin_coin_sum {
+    margin-right: 6.6vw;
+}
+
+.history_container div.columns_names span.admin_coin_pred {
+    margin-right: 11.7vw;
+}
+
+.history_container div.columns_names span.admin_coin_com {
+    margin-right: 14.2vw;
+}
+
+.com_cont div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.com_cont {
+    z-index: 9999;
+    transition: .3s ease;
+    display: flex;
+    opacity: 0;
+    position: absolute;
+    margin-top: 3vw;
+    top: -99999px;
+    margin-left: 15vw;
+    background-color: rgba(255, 255, 255, 0.04);
+    padding: 1vw 1.5vw;
+    backdrop-filter: blur(12px);
+    border-radius: 40px;
+    flex-direction: column;
+}
+
+#text-counter_3:focus {
+    outline: none;
+}
+
+.symbols_num,
+button[type=sumbit] {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+    /* identical to box height, or 176% */
+    color: #00A3FF;
+}
+
+.com_cont-open {
+    top: inherit;
+    opacity: 1;
+}
+
+#text-counter_3 {
+    resize: none;
+    width: 15vw !important;
+    height: 8vw !important;
+    background: none;
+    padding: 0.5vw 1vw;
+    border: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+#price:focus {
+    outline: none;
+}
+
+#price {}
+
+#price,
+#coinsum {
+    background: none;
+    border: none;
+    width: 50px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.30vw;
+    line-height: 1.30vw;
+    /* identical to box height, or 125% */
+    color: #00A3FF;
+}
+
+#price {
+    width: 60px;
+    font-size: 0.9vw;
+}
+
+#coinsum {
+    width: 6.25vw;
+    color: #FFF;
+    text-align: center;
+}
+
+@media(max-width: 1200px) {
+    .security_container span {
+        opacity: 1;
+        color: rgba(255, 255, 255, 0.85) !important;
+    }
+
+    .columns_names span {
+        color: rgba(255, 255, 255, 0.85) !important;
+        opacity: 1;
+    }
+
+    body .last_deals-body .investors_container .deal_link .com_container::before {
+        color: rgba(255, 255, 255, 0.85) !important;
+        opacity: 1 !important;
+    }
+
+    .deal-date_container>*,
+    .deal-date_container::before {
+        color: rgba(255, 255, 255, 0.85) !important;
+        opacity: 1 !important;
+    }
+}

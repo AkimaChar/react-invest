@@ -1,0 +1,723 @@
+@media (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding-top: 24vw;
+  }
+  .portfolio_graphs_container {
+    margin-top: 10vw;
+    position: relative;
+  }
+  body aside.aside_container {
+    position: absolute;
+    width: 100vw;
+    height: 24vw;
+    padding: 0 5.2vw;
+    background-color: transparent;
+  }
+  body aside.aside_container .aside-body {
+    width: 100%;
+    height: 12.17vw;
+    margin: 6.3vw 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  body aside.aside_container .aside-body a {
+    font-size: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 1;
+    margin: 0;
+    width: 7vw;
+    height: 7vw;
+    position: relative;
+    -webkit-transform: translateY(-50vw);
+    transform: translateY(-50vw);
+  }
+  body aside.aside_container .aside-body a:last-of-type {
+    display: none;
+  }
+  body aside.aside_container .aside-body a.active {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  body aside.aside_container .aside-body a svg {
+    margin: 0;
+    opacity: 1;
+  }
+  body aside.aside_container .aside-body a svg>path {
+    fill: #fff;
+    opacity: 1;
+  }
+  body aside.aside_container .aside-body svg {
+    width: 12.17vw;
+    height: 12.17vw;
+    margin: 0;
+  }
+  body aside.aside_container .aside-body .burger img {
+    width: 12.17vw;
+    height: 12.17vw;
+  }
+  body header {
+    margin-bottom: 2.4vw;
+  }
+  body header h1 {
+    font-size: 8.7vw;
+    line-height: 18.5vw;
+    margin: 0;
+  }
+  body .wrap_container {
+    max-width: 92.6vw;
+  }
+  body nav {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 9.8vw;
+  }
+  body nav .nav_rating-pages {
+    width: 58vw;
+    height: 15vw;
+    -webkit-backdrop-filter: blur(4.35vw);
+    backdrop-filter: blur(4.35vw);
+    border-radius: 8.7vw;
+    padding: 5vw 10.2vw;
+  }
+  body nav .nav_rating-pages a {
+    font-size: 4.35vw;
+    line-height: 5.2vw;
+  }
+  body nav .nav-hr {
+    position: absolute;
+    width: 50vw;
+    height: 0.2vw;
+    margin: 0 !important;
+    margin: 0 !important;
+  }
+  body nav .nav-hr:first-of-type {
+    right: -33vw;
+  }
+  body nav .nav-hr:last-of-type {
+    left: -33vw;
+  }
+  body .investors_container {
+    height: auto;
+    margin: 0;
+    padding: 4.3vw 2.6vw 3vw 2.4vw;
+    -webkit-backdrop-filter: blur(4.3vw);
+    backdrop-filter: blur(4.3vw);
+    border-radius: 8.7vw;
+    margin-bottom: 8.7vw;
+  }
+  body .investors_container .columns_names {
+    margin: 0 5vw;
+    margin-bottom: 3.7vw;
+  }
+  body .investors_container .columns_names span {
+    font-size: 2.8vw;
+    line-height: 3.5vw;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+  }
+  body .investors_container .columns_names span:nth-of-type(3), body .investors_container .columns_names span:nth-of-type(4), body .investors_container .columns_names span:nth-of-type(5), body .investors_container .columns_names span:nth-of-type(6) {
+    display: none;
+  }
+  body .investors_container .columns_names span:first-of-type {
+    width: 80%;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  body .investors_container .investors_list {
+    width: auto;
+    height: auto;
+  }
+  body .investors_container .investors_list .investor-link {
+    height: auto;
+    width: 100%;
+    border-radius: 8.7vw;
+    padding: 5.2vw 6.3vw 5.6vw 6.3vw;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 7.8vw;
+  }
+  body .investors_container .investors_list .investor-link:last-of-type {
+    margin: 0;
+  }
+  body .investors_container .investors_list .investor-link .about-investor {
+    width: 60%;
+    padding-bottom: 4.5vw;
+    margin-bottom: 9vw;
+    position: relative;
+  }
+  body .investors_container .investors_list .investor-link .about-investor .avatar-img {
+    width: 10.4vw;
+    height: 10.4vw;
+  }
+  body .investors_container .investors_list .investor-link .about-investor .short-desc {
+    margin-left: 2.8vw;
+  }
+  body .investors_container .investors_list .investor-link .about-investor .short-desc a {
+    margin-bottom: 0.2vw;
+    font-size: 4.3vw;
+    line-height: 5.2vw;
+  }
+  body .investors_container .investors_list .investor-link .about-investor .short-desc span {
+    font-size: 2.8vw;
+    line-height: 3.5vw;
+  }
+  body .investors_container .investors_list .investor-link .about-investor::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -6.3vw;
+    height: 1px;
+    width: 87.6vw;
+    background: rgba(255, 255, 255, 0.07);
+  }
+  body .investors_container .investors_list .investor-link .profit-percent {
+    width: 35%;
+    margin-left: 5%;
+    padding-bottom: 4.5vw;
+    margin-bottom: 9vw;
+  }
+  body .investors_container .investors_list .investor-link .profit-percent .profit-desc {
+    margin: 0;
+    font-size: 2.8vw;
+    font-weight: 300;
+    line-height: 5.4vw;
+    color: rgba(255, 255, 255, 1);
+  }
+  body .investors_container .investors_list .investor-link .profit-percent .profit-desc span {
+    line-height: inherit;
+    font-size: 3.2vw;
+    color: rgba(0, 163, 255, 1);
+  }
+  body .investors_container .investors_list .investor-link .using-coins {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 4.3vw;
+    margin-bottom: 4.3vw;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    grid-template-columns: repeat(10, 5.4vw);
+    gap: 1.9vw;
+    position: relative;
+  }
+  body .investors_container .investors_list .investor-link .using-coins a {
+    width: 5.4vw;
+    height: 5.4vw;
+    margin: 0;
+  }
+  body .investors_container .investors_list .investor-link .using-coins::before {
+    content: "Coins";
+    position: absolute;
+    top: -5.9vw;
+    left: 0;
+    font-size: 2.8vw;
+    line-height: 3.5vw;
+    color: #ffffff;
+    font-weight: normal;
+  }
+  body .investors_container .investors_list .investor-link .using-coins::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -6.3vw;
+    height: 1px;
+    width: 87.6vw;
+    background: rgba(255, 255, 255, 0.07);
+  }
+  body .investors_container .investors_list .investor-link .perfomance {
+    width: 100%;
+    padding-bottom: 5.6vw;
+    margin-bottom: 7.8vw;
+    font-weight: 400 !important;
+    position: relative;
+    color: rgba(255, 255, 255, 1);
+  }body .investors_container .investors_list .investor-link .perfomance p{
+
+    font-weight: 300 !important;
+
+    color: rgba(255, 255, 255, 1);
+  }
+  body .investors_container .investors_list .investor-link .perfomance p {
+    font-size: 3.2vw;
+    line-height: 5.4vw;
+    margin: 0;
+  }
+  body .investors_container .investors_list .investor-link .perfomance p span {
+    line-height: inherit;
+    font-size: 4.3vw !important;
+    color: rgba(0, 163, 255, 1);
+  }
+  body .investors_container .investors_list .investor-link .perfomance::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -6.3vw;
+    height: 1px;
+    width: 87.6vw;
+    background: rgba(255, 255, 255, 0.07);
+  }
+  body .investors_container .investors_list .investor-link .last-transaction {
+    width: 100%;
+    font-size: 2.8vw;
+    line-height: 3.4vw;
+    color: rgba(255, 255, 255, 0.85);
+    position: relative;
+    opacity: 1;
+  }
+  body .investors_container .investors_list .investor-link .last-transaction::before {
+    content: "Last transaction";
+    position: absolute;
+    top: -4.3vw;
+    left: 0;
+    font-size: 2.8vw;
+    line-height: 3.5vw;
+    color: #ffffff;
+    font-weight: normal;
+  }
+  body .investors_container .investors_list .investor-link .follow-button {
+    position: absolute;
+    bottom: -2.8vw;
+    right: -2.2vw;
+    border-radius: 8.7vw;
+    -webkit-backdrop-filter: blur(4.3vw);
+    backdrop-filter: blur(4.3vw);
+    border-radius: 8.7vw;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 18.7vw 9.3vw 4.5vw 9.5vw;
+    width: auto;
+    height: auto;
+    background-image: url(./../img/follow.svg);
+    background-repeat: no-repeat;
+    background-size: 11vw;
+    background-position: 9.3vw 6.7vw;
+    opacity: 0.3;
+  }
+  body .investors_container .investors_list .investor-link .follow-button:hover {
+    background-color: #00a3ff;
+    opacity: 1;
+  }
+  body .investors_container .investors_list .investor-link .follow-button span {
+    opacity: 1;
+    font-weight: 500;
+    font-size: 3.2vw;
+    line-height: 3.9vw;
+  }
+  body .last_comments_container {
+    height: auto;
+  }
+  body .last_comments_container .last_comments-title {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 2.4vw;
+  }
+  body .last_comments_container .last_comments-title .last_comments-hr {
+    position: absolute;
+    width: 50vw;
+    height: 0.2vw;
+    margin: 0 !important;
+    margin: 0 !important;
+  }
+  body .last_comments_container .last_comments-title .last_comments-hr:first-of-type {
+    right: -36vw;
+  }
+  body .last_comments_container .last_comments-title .last_comments-hr:last-of-type {
+    left: -36vw;
+  }
+  body .last_comments_container .last_comments-title h2 {
+    font-size: 8.7vw;
+    line-height: 18.5vw;
+    margin: 0;
+  }
+  body .last_comments_container .last_comments_body {
+    padding: 3.7vw 2.8vw 3.2vw 3vw;
+    height: auto;
+    border-radius: 8.7vw;
+  }
+  body .last_comments_container .last_comments_body .comment_container {
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+    padding: 3.7vw 5.4vw 5.2vw 5.6vw;
+    margin-bottom: 2.8vw;
+  }
+  body .last_comments_container .last_comments_body .comment_container:last-of-type {
+    margin: 0;
+  }
+  body .last_comments_container .last_comments_body .comment_container .comment-title {
+    padding: 1.85vw 0;
+    padding-left: 11.3vw;
+    position: relative;
+    margin-bottom: 1.3vw;
+  }
+  body .last_comments_container .last_comments_body .comment_container .comment-title a {
+    font-weight: 500;
+    font-size: 2.8vw;
+    line-height: 5.3vw;
+    color: #ffffff;
+    opacity: 0.3;
+  }
+  body .last_comments_container .last_comments_body .comment_container .comment-title span {
+    font-weight: 500;
+    font-size: 3.2vw;
+    line-height: 5.3vw;
+    color: #ffffff;
+    opacity: 0.7;
+  }
+  body .last_comments_container .last_comments_body .comment_container .comment-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 9.1vw;
+    height: 9.1vw;
+    background-color: #fff;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/btc.png);
+  }
+  body .last_comments_container .last_comments_body .comment_container .comment-body>a {
+    display: none;
+  }
+  body .last_comments_container .last_comments_body .comment_container .comment-body .comment-text p {
+    font-weight: 400;
+    font-size: 2.8vw;
+    line-height: 5.4vw;
+    color: #fff;
+  }
+  body .last_comments_container .last_comments_body .comment_container .comment-body .comment-text p span {
+    color: #00a3ff;
+    font-weight: 500;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  body .last_comments_container .last_comments_body .comment_container .comment-body .comment-text p:first-of-type {
+    margin-bottom: 1.3vw;
+  }
+  body .last_comments_container .last_comments_body .comment_container .comment-body .comment-text p:last-of-type {
+    font-weight: 500;
+    font-size: 3.2vw;
+    line-height: 3.9vw;
+  }
+  body .footer {
+    margin-top: 5.8vw;
+    margin-bottom: 7.8vw;
+  }
+  body .footer span {
+    font-weight: 300;
+    font-size: 3.2vw;
+    line-height: 2.8vw;
+    color: #ffffff;
+    opacity: 0.2;
+    margin-bottom: 1.5vw;
+  }
+  body .footer a {
+    text-decoration: none;
+    font-size: 4.3vw;
+    line-height: 3.9vw;
+    color: #00a3ff;
+  }
+}
+
+@media (min-width: 641px) {
+  .burger {
+    display: none;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+  body {
+    width: auto;
+    margin-left: 9.25vw !important;
+  }
+  body .aside-body a svg {
+    width: 4vw;
+    height: 4vw;
+  }
+  body .wrap_container {
+    max-width: 85vw !important;
+  }
+  body aside.aside_container {
+    width: 9.25vw;
+  }
+  body aside .aside-body>svg {
+    width: 7.323vw;
+    height: 7.323vw;
+    margin-bottom: 3.2vw;
+  }
+  body .aside-body {
+    margin: 0;
+  }
+  body .wrap_container {
+    max-width: 85vw;
+  }
+  body .rating_container .nav_rating-pages {
+    width: 25vw;
+    height: 5vw;
+    padding: 1.51vw 3.3vw;
+  }
+  body .rating_container .nav_rating-pages a {
+    font-size: 2vw;
+    margin-top: 0;
+  }
+  body .rating_container .nav-hr {
+    width: 31vw;
+  }
+  body .rating_container .investors_container {
+    height: auto;
+    margin-top: 1.4vw;
+    padding: 3vw 4vw;
+  }
+  body .rating_container .investors_container .columns_names {
+    display: none;
+  }
+  body .rating_container .investors_container .investors_list {
+    width: 100%;
+  }
+  body .rating_container .investors_container .investors_list .investor-link {
+    height: auto;
+    width: 100%;
+    padding: 3vw 4vw;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    margin-bottom: 3vw;
+  }
+  body .rating_container .investors_container .investors_list .investor-link:last-of-type {
+    margin: 0;
+  }
+  body .rating_container .investors_container .investors_list .investor-link .about-investor {
+    width: 33%;
+    margin-bottom: 4vw;
+    position: relative;
+    padding-top: 3vw;
+  }
+  body .rating_container .investors_container .investors_list .investor-link .about-investor .avatar-img {
+    width: 5vw;
+    height: 5vw;
+  }
+  body .rating_container .investors_container .investors_list .investor-link .about-investor .short-desc .investor-profile-link {
+    font-size: 1.8vw;
+    margin-bottom: 1vw;
+  }
+  body .rating_container .investors_container .investors_list .investor-link .about-investor .short-desc .profile-followers {
+    font-size: 1.3vw;
+  }
+  body .rating_container .investors_container .investors_list .investor-link .about-investor::before {
+    content: "Name";
+    position: absolute;
+    top: 0vw;
+    left: 0;
+    font-size: 1.5vw;
+    line-height: 1.6vw;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: normal;
+  }
+  body .rating_container .investors_container .investors_list .investor-link .profit-percent {
+    width: 22%;
+    margin-bottom: 4vw;
+    position: relative;
+    padding-top: 3vw;
+  }
+  body .rating_container .investors_container .investors_list .investor-link .profit-percent .profit-desc {
+    margin: 0;
+    font-size: 1.4vw;
+    line-height: 2.6vw;
+  }
+  body .rating_container .investors_container .investors_list .investor-link .profit-percent .profit-desc span {
+    font-size: 1.6vw;
+  }
+  body .rating_container .investors_container .investors_list .investor-link .profit-percent::before {
+    content: "Profit";
+    position: absolute;
+    top: 0vw;
+    left: 0;
+    font-size: 1.5vw;
+    line-height: 1.6vw;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: normal;
+  }
+  body .rating_container .investors_container .investors_list .investor-link .using-coins {
+    padding: 0;
+    width: 45%;
+    margin-bottom: 4vw;
+    position: relative;
+    padding-top: 3vw;
+  }
+  body .rating_container .investors_container .investors_list .investor-link .using-coins .coin {
+    height: 1.8vw;
+    width: 1.8vw;
+    margin-right: 0.5vw;
+    margin-bottom: 0.5vw;
+  }
+  body .rating_container .investors_container .investors_list .investor-link .using-coins::before {
+    content: "Coins";
+    position: absolute;
+    top: 0vw;
+    left: 0;
+    font-size: 1.5vw;
+    line-height: 1.6vw;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: normal;
+  }
+  body .rating_container .investors_container .investors_list .investor-link .perfomance {
+    width: 33%;
+    position: relative;
+    padding-top: 3vw;
+  }
+  body .rating_container .investors_container .investors_list .investor-link .perfomance p {
+    margin: 0;
+    font-weight: 200;
+    font-size: 1.5vw;
+    line-height: 2vw;
+  }
+  body .rating_container .investors_container .investors_list .investor-link .perfomance p span {
+    font-size: 1.6vw !important;
+    margin-left: 0.5vw;
+  }
+  body .rating_container .investors_container .investors_list .investor-link .perfomance::before {
+    content: "Perfomance";
+    position: absolute;
+    top: 0vw;
+    left: 0;
+    font-size: 1.5vw;
+    line-height: 1.6vw;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: normal;
+  }
+  .perfomance {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 200;
+  }
+  .profit-desc {
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  body .rating_container .investors_container .investors_list .investor-link .last-transaction {
+    width: 22%;
+    font-weight: 200;
+    position: relative;
+    padding-top: 3vw;
+    opacity: 1;
+    font-size: 1.7vw;
+    line-height: 2vw;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  body .rating_container .investors_container .investors_list .investor-link .last-transaction::before {
+    content: "Last Transaction";
+    position: absolute;
+    top: 0vw;
+    left: 0;
+    font-size: 1.5vw;
+    line-height: 1.6vw;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: normal;
+  }
+  body .rating_container .investors_container .investors_list .investor-link .follow-button {
+    margin: 0;
+    width: 33%;
+    height: 7vw;
+    font-size: 3vw;
+    margin-left: 12%;
+  }
+  body .rating_container .investors_container .investors_list .investor-link .follow-button button, body .rating_container .investors_container .investors_list .investor-link .follow-button span {
+    font-size: inherit;
+  }
+  body .last_comments_container {
+    height: auto;
+  }
+  body .last_comments_container .last_comments_body {
+    padding: 3.7vw 2.8vw 3.2vw 3vw;
+    height: auto;
+  }
+  body .last_comments_container .last_comments_body .comment_container {
+    width: 100%;
+    height: auto;
+    padding: 2vw 3.4vw 2.2vw 3.6vw;
+    margin-bottom: 2.8vw;
+  }
+  body .last_comments_container .last_comments_body .comment_container:last-of-type {
+    margin: 0;
+  }
+  body .last_comments_container .last_comments_body .comment_container .comment-title {
+    padding: 0;
+  }
+  body .last_comments_container .last_comments_body .comment_container .comment-title a {
+    font-weight: 500;
+    font-size: 1.8vw;
+    line-height: 2.3vw;
+    color: #ffffff;
+    opacity: 0.3;
+  }
+  body .last_comments_container .last_comments_body .comment_container .comment-title span {
+    font-weight: 500;
+    font-size: 1.5vw;
+    line-height: 2.3vw;
+    color: #ffffff;
+    opacity: 0.7;
+  }
+  body .last_comments_container .last_comments_body .comment_container .comment-body>a .avatar-img {
+    width: 7vw;
+    height: 7vw;
+  }
+  body .last_comments_container .last_comments_body .comment_container .comment-body .comment-text p {
+    font-weight: 400;
+    font-size: 1.8vw;
+    line-height: 2.4vw;
+    color: #fff;
+  }
+  body .last_comments_container .last_comments_body .comment_container .comment-body .comment-text p span {
+    color: #00a3ff;
+    font-weight: 500;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  body .last_comments_container .last_comments_body .comment_container .comment-body .comment-text p:first-of-type {
+    margin-bottom: 0.5vw;
+  }
+  body .last_comments_container .last_comments_body .comment_container .comment-body .comment-text p:last-of-type {
+    font-weight: 500;
+    font-size: 2.2vw;
+    line-height: 2.9vw;
+  }
+  body .footer {
+    margin-top: 5.8vw;
+    margin-bottom: 5.8vw;
+  }
+  body .footer span {
+    font-weight: 300;
+    font-size: 2.2vw;
+    line-height: 2.8vw;
+    color: #ffffff;
+    opacity: 0.2;
+    margin-bottom: 0.7vw;
+  }
+  body .footer a {
+    text-decoration: none;
+    font-size: 2.7vw;
+    line-height: 3vw;
+    color: #00a3ff;
+  }
+}

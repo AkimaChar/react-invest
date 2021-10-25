@@ -1,0 +1,168 @@
+@import url("css.css");
+.user-avatar {
+  display: none !important;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.footer_container,
+.sign-up_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sign-up_container > span,
+.sign-up_container > a {
+  font-family: Montserrat;
+}
+
+.sign-up_container span, .sign-up_container a {
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  opacity: 0.3;
+  text-decoration: none;
+}
+
+.sign-up_container a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.sign-up_container a {
+  color: #00A3FF;
+  font-weight: 500;
+  opacity: 1;
+}
+
+.form_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 661px;
+  height: 601px;
+  background: rgba(255, 255, 255, 0.01);
+  border-radius: 40px;
+}
+
+form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 539px;
+  height: 425px;
+  top: -30px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 40px;
+}
+
+form .input_container {
+  width: 490px;
+  height: 93px;
+  border: none;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 50px;
+  margin-bottom: 25px;
+  padding-top: 10px;
+  padding-left: 37px;
+  padding-right: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form input {
+  position: relative;
+  top: -24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background: none;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+
+form label {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+  opacity: 0.4;
+  margin-top: 10px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+form button {
+  width: 228px;
+  height: 76px;
+  background: #00A3FF;
+  border: 1px solid #00A3FF;
+  border-radius: 40px;
+  color: #fff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+form button:hover {
+  cursor: pointer;
+}
+
+form button:active {
+  cursor: default;
+}
+/*# sourceMappingURL=login-css.css.map */

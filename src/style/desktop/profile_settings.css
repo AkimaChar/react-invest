@@ -1,0 +1,371 @@
+.profile_settings-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+._hr {
+    width: 30vw;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.07);
+}
+
+html body.personalSettings {
+    position: relative;
+    background: url(../img/persSetBG.png) no-repeat center center;
+    background-size: cover;
+}
+
+input[type=file] {
+    width: 9.95vw;
+    height: 9.95vw;
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.profile-main_settings div {
+    position: relative;
+}
+
+.profile_settings-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile_avatar {
+    position: absolute;
+    width: 9.95vw;
+    height: 9.95vw;
+    background-size: 9.95vw 9.95vw;
+    background-repeat: no-repeat;
+    border-radius: 1.04vw;
+    transition: 0.2s ease;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-image: url(../img/nofoto.png);
+}
+
+h1 {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+input[type=file]:hover~.profile_avatar div {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.profile-main_settings {
+    width: 49.48vw;
+    max-width: 49.48vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-main_settings:first-child {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.04vw;
+    line-height: 1.30vw;
+    color: #FFFFFF;
+    height: auto;
+}
+
+.short_info {
+    margin-top: 1vw;
+}
+
+.creation_date span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.68vw;
+    line-height: 1.30vw;
+    /* identical to box height, or 192% */
+    color: #00A3FF;
+}
+
+.creation_date {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.68vw;
+    line-height: 1.30vw;
+    /* identical to box height, or 192% */
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.profile_avatar div {
+    background-color: #0000008f;
+    background-image: url("../img/bi_camera.png");
+    height: 100%;
+    border-radius: 1.04vw;
+    width: 100%;
+    opacity: 0;
+    transition: 0.3s ease;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.profile_entrance-data {
+    width: 28.07vw;
+    height: 14.74vw;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.88vw 0  0px;
+    flex-direction: column;
+}
+
+.profile_entrance-data label {
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.09vw 1.98vw;
+    width: 24.69vw;
+    height: 4.84vw;
+}
+
+* {
+    outline: none;
+}
+
+.save_change:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+form.profile_text-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.save_change {
+    opacity: 0;
+    transition: .5s ease;
+    visibility: hidden;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #00A3FF;
+    margin-bottom: 1vw;
+}
+
+.visible_btn {
+    opacity: 1;
+}
+
+.profile_settings-container>hr:last-child {
+    width: 53.80vw;
+    margin: 2.45vw 0;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+label:first-of-type:before {
+    content: 'Name';
+}
+
+label:last-of-type:before {
+    content: 'Password';
+}
+
+label::before,
+label::before {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.78vw;
+    line-height: 0.94vw;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+input[type=text],
+input[type=password] {
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.04vw;
+    line-height: 1.25vw;
+    color: #FFFFFF;
+}
+
+.investor-profile-link:hover {
+    cursor: pointer;
+}
+
+
+.rating span {
+    width: 1vw;
+    height: 1vw;
+    padding: 0;
+    font-size: 1.2vw;
+    line-height: 1;
+    color: lightgrey;
+}
+
+@media (max-width: 640px) {
+    .rating span {
+        width: 6vw;
+        height: 6vw;
+        font-size: 6vw;
+        ;
+    }
+}
+
+.rating>span:before {
+    content: '☆';
+}
+
+.rating>span.active {
+    color: #00A3FF;
+}
+
+.investor-profile-link {
+    text-decoration: none;
+}
+
+.profile_follow-container {
+    width: 53.80vw;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 40px;
+    padding: 1.67vw 2.45vw;
+}
+
+.profile_follow-container>span:first-of-type {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    /* identical to box height, or 147% */
+    color: #FFFFFF;
+}
+
+.profile_aim {
+    margin-top: 4.01vw;
+    margin-bottom: 1vw;
+}
+
+.profile_aim,
+.profile_description {
+    width: 49.38vw;
+    height: 8.29vw;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 40px;
+    display: flex-start;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.88vw;
+    padding-top: 1.30vw;
+}
+
+.profile_follow-container {
+    margin-bottom: 2vw;
+}
+
+.title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height, or 139% */
+    color: #00A3FF;
+}
+
+#text-counter_1:focus,
+#text-counter_2:focus {
+    outline: none;
+}
+
+#text-counter_1,
+#text-counter_2 {
+    resize: none;
+    width: 100% !important;
+    background: none;
+    height: 80%;
+    border: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.profile_subscription {
+    margin: 0;
+    height: 100%;
+    width: 16.82vw;
+    font-size: 1.04vw;
+    line-height: 1.25vw;
+}
+
+.profile-authors {
+    margin-top: 0.94vw;
+}
+
+.author-link:hover {
+    transform: scale(1.03);
+}
+
+.author-link {
+    transition: .3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6.61vw;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 40px;
+    margin-bottom: 0.94vw;
+    padding-left: 1.82vw;
+}
+
+.aim_block-title,
+.desc_block-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.symbols_num {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height, or 139% */
+    color: #FFFFFF;
+    opacity: 0.2;
+}

@@ -1,0 +1,309 @@
+@media (min-width: 641px) and (max-width: 1200px) {
+  body {
+    width: 91vw;
+    margin-left: 9vw;
+    overflow-x: hidden;
+  }
+  body .aside_container {
+    width: 9vw;
+    height: 100vh;
+  }
+  body .aside-body {
+    margin-top: 0;
+    width: 7vw;
+    max-height: 90vh;
+    height: 100%;
+  }
+  body .aside-body svg {
+    margin-bottom: 0.52vw;
+  }
+  body .aside-body a,
+  body .aside-body button {
+    color: #fff;
+    font-size: 0.78vw;
+    line-height: 0.8854vw;
+  }
+  body .aside-body {
+    margin-top: 3vw;
+    margin-bottom: 0;
+  }
+  body .aside-body a svg {
+    width: 4vw;
+    height: 4vw;
+  }
+  body .aside-body a:nth-of-type(2)::before {
+    margin-top: -0.88vw;
+  }
+  body .aside-body a:nth-of-type(1)::before {
+    margin-top: -1.4vw;
+  }
+  body .aside-body a:nth-of-type(3)::before {
+    margin-top: -1.25vw;
+  }
+  body .aside-body a:nth-of-type(4)::before {
+    margin-top: -1.25vw;
+  }
+  body .aside-body a:nth-of-type(4) svg {
+    margin-left: 0.52vw;
+  }
+  body .aside-body > svg {
+    width: 6.5vw;
+    height: 6.5vw;
+    margin-bottom: 4.5vw;
+  }
+  body .aside-body .wrap_container {
+    max-width: 90vw;
+  }
+  body .aside-body .footer {
+    margin-top: 5.8vw;
+    margin-bottom: 5.8vw;
+  }
+  body .aside-body .footer span {
+    font-weight: 300;
+    font-size: 2.2vw;
+    line-height: 2.8vw;
+    color: #ffffff;
+    opacity: 0.2;
+    margin-bottom: 0.7vw;
+  }
+  body .aside-body .footer a {
+    text-decoration: none;
+    font-size: 2.7vw;
+    line-height: 3vw;
+    color: #00a3ff;
+  }
+  body .form_container {
+    width: 70vw;
+    height: auto;
+    padding: 3vw 5vw;
+    margin-bottom: 5vw;
+  }
+  body .form_container form {
+    width: 60vw;
+    height: auto;
+    position: static;
+    padding: 3vw;
+    margin-bottom: 2vw;
+  }
+  body .form_container form .input_container {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    margin-bottom: 25px;
+    padding: 2vw 5vw;
+  }
+  body .form_container form .input_container label,
+  body .form_container form .input_container input {
+    position: static;
+    display: block;
+  }
+  body .form_container form .input_container label {
+    font-size: 2vw;
+    line-height: 2.2vw;
+    margin: 0;
+    margin-bottom: 2vw;
+  }
+  body .form_container form .input_container input {
+    font-size: 2.2vw;
+    line-height: 2.6vw;
+  }
+  body .form_container form button {
+    padding: 2vw 7vw;
+    width: auto;
+    height: auto;
+    font-size: 2.5vw;
+    line-height: 3vw;
+  }
+  body .form_container .sign-up_container span,
+  body .form_container .sign-up_container a {
+    font-size: 2vw;
+    line-height: 2.5vw;
+  }
+  body .form_container .sign-up_container span {
+    margin-bottom: 0.7vw;
+  }
+  body .footer {
+    position: static;
+  }
+  body .footer span {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  body .footer a {
+    text-decoration: none;
+    font-size: 26px;
+    line-height: 30px;
+    color: #00a3ff;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding-top: 30vw;
+  }
+  body aside.aside_container {
+    position: absolute;
+    width: 100vw;
+    height: 24vw;
+    padding: 0 5.2vw;
+    background-color: transparent;
+  }
+  body aside.aside_container .aside-body {
+    width: 100%;
+    height: 12.17vw;
+    margin: 6.3vw 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body aside.aside_container .aside-body a {
+    font-size: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 1;
+    margin: 0;
+    width: 9vw;
+    height: 9vw;
+    position: relative;
+    -webkit-transform: translateY(-50vw);
+            transform: translateY(-50vw);
+  }
+  body aside.aside_container .aside-body a:last-of-type {
+    display: none;
+  }
+  body aside.aside_container .aside-body a.active {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  body aside.aside_container .aside-body a svg {
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    display: block;
+    width: 9vw;
+    height: 9vw;
+    margin: 0;
+    opacity: 1;
+  }
+  body aside.aside_container .aside-body a svg > path {
+    fill: #fff;
+    opacity: 1;
+  }
+  body aside.aside_container .aside-body svg {
+    width: 12.17vw;
+    height: 12.17vw;
+    margin: 0;
+  }
+  body aside.aside_container .aside-body .burger img {
+    width: 12.17vw;
+    height: 12.17vw;
+  }
+  body header {
+    margin-bottom: 2.4vw;
+  }
+  body header h1 {
+    font-size: 8.7vw;
+    line-height: 18.5vw;
+    margin: 0;
+  }
+  body .wrap_container {
+    max-width: 92.6vw;
+  }
+  body .form_container {
+    width: 100vw;
+    max-width: 100vw;
+    margin: 0;
+    height: auto;
+    padding: 5.4vw 2.2vw;
+    border-radius: 8.7vw;
+    margin-bottom: 5vw;
+  }
+  body .form_container form {
+    width: 100%;
+    height: auto;
+    position: static;
+    padding: 7.8vw 2.2vw;
+    margin-bottom: 2vw;
+    border-radius: inherit;
+  }
+  body .form_container form .input_container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+    padding: 4.56vw 7vw;
+    border-radius: inherit;
+  }
+  body .form_container form .input_container label,
+  body .form_container form .input_container input {
+    position: static;
+    display: block;
+  }
+  body .form_container form .input_container label {
+    font-size: 3.2vw;
+    line-height: 3.9vw;
+    opacity: 0.4;
+    margin: 0;
+    margin-bottom: 2vw;
+  }
+  body .form_container form .input_container input {
+    font-size: 20px;
+    line-height: 24px;
+    opacity: 1;
+  }
+  body .form_container form button {
+    padding: 6.3vw 16.3vw;
+    width: auto;
+    height: auto;
+    font-size: 4.3vw;
+    line-height: 5.2vw;
+  }
+  body .form_container .sign-up_container span,
+  body .form_container .sign-up_container a {
+    font-size: 3.2vw;
+    line-height: 5.4vw;
+  }
+  body .form_container .sign-up_container span {
+    margin-bottom: 0.7vw;
+  }
+  body .form_container .sign-up_container a {
+    font-size: 4.35vw;
+    line-height: 5.4vw;
+  }
+  body .footer {
+    position: static;
+    margin-top: 5.8vw;
+    margin-bottom: 7.8vw;
+  }
+  body .footer span {
+    font-weight: 300;
+    font-size: 3.2vw;
+    line-height: 2.8vw;
+    color: #ffffff;
+    opacity: 0.2;
+    margin-bottom: 1.5vw;
+  }
+  body .footer a {
+    text-decoration: none;
+    font-size: 4.3vw;
+    line-height: 3.9vw;
+    color: #00a3ff;
+  }
+}
+
+@media (min-width: 641px) {
+  .burger {
+    display: none;
+  }
+}

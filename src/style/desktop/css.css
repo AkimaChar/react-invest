@@ -1,0 +1,1068 @@
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Rany';
+  font-style: normal;
+  font-weight: lighter;
+  -webkit-overflow-scrolling: touch;
+}
+
+.dev_tool-link {
+  padding: 10px;
+  width: aut0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 40px;
+  padding: 10px 15px;
+  top: 0;
+  left: 0;
+}
+
+.dev_tool-link>a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  text-decoration: none;
+  line-height: 30px;
+  /* or 120% */
+  color: #FFFFFF;
+}
+
+.dev_tool-link>a:not(:last-of-type) {
+  margin-right: 5px;
+}
+
+hr {
+  border: none;
+}
+
+.rectangle {
+  position: absolute;
+  width: 1px;
+  height: 1526px;
+  left: 1889px;
+  top: -58px;
+  background: rgba(0, 163, 255, 0.6);
+  -webkit-filter: blur(350px);
+  filter: blur(350px);
+  -webkit-transform: matrix(0, -1, -1, 0, 0, 0);
+  transform: matrix(0, -1, -1, 0, 0, 0);
+}
+
+body, html {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  background: url("../img/bg.png") no-repeat center center;
+  background-position-y: 0;
+  background-size: cover;
+}
+
+/*body::before {
+    background: url("../img/bg.png") no-repeat center center;
+    background-position-y: 0px;
+    background-size: cover;
+    content: ' ';
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    will-change: transform;
+    z-index: -1;
+}*/
+
+body {
+  margin-left: 5.2vw;
+  min-height: 100vh;
+}
+
+.wrap_container {
+  max-width: 87.86vw;
+  margin: auto;
+}
+
+.aside_container {
+  position: fixed;
+  width: 6.25vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.02);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.aside-body {
+  margin-top: 5vh;
+  width: 4.27vw;
+  max-height: 90vh;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aside-body svg {
+  margin-bottom: 0.52vw;
+}
+
+.aside-body a, .aside-body button {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 0.78vw;
+  line-height: 0.8854vw;
+  text-align: center;
+}
+
+.aside-body a {
+  margin-bottom: 2.6vw;
+}
+
+.aside-body a:last-of-type {
+  margin-top: auto;
+}
+
+.aside-body a:hover {
+  cursor: pointer;
+}
+
+.aside-body a:hover img {
+  background-color: #00A3FF;
+  color: #00A3FF;
+}
+
+.aside-body a::before:not(:last-of-type) {
+  content: '';
+  position: absolute;
+  width: 5.2vw;
+  height: 5.2vw;
+  background: rgba(255, 255, 255, 0.03);
+  -webkit-backdrop-filter: blur(3.125vw);
+  backdrop-filter: blur(3.125vw);
+  border-radius: 1.04vw;
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.aside-body a:nth-of-type(2)::before {
+  margin-top: -0.88vw;
+}
+
+.aside-body a:nth-of-type(1)::before {
+  margin-top: -1.4vw;
+}
+
+.aside-body a:nth-of-type(3)::before {
+  margin-top: -1.25vw;
+}
+
+.aside-body a:nth-of-type(4)::before {
+  margin-top: -1.25vw;
+}
+
+.aside-body a:nth-of-type(4) svg {
+  margin-left: 0.52vw;
+}
+
+.aside-body>svg {
+  width: 4.323vw;
+  height: 4.323vw;
+  margin-bottom: 1.2vw;
+}
+
+.user-avatar {
+  width: 3.9vw;
+  height: 3.9vw;
+  border-radius: 1.05vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 1 !important;
+  -webkit-animation: none;
+  animation: none;
+  margin-left: 0.2vw;
+  margin-top: 10.4vw;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+button :active, button :hover, button :focus {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 1;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  color: #00A3FF;
+}
+
+a:hover svg>path {
+  fill: #00A3FF;
+  opacity: 1;
+}
+
+a:hover svg>g {
+  opacity: 1;
+}
+
+a:hover svg>g path {
+  stroke: #00A3FF;
+}
+
+svg:nth-of-type(2) {
+  stroke: white;
+  stroke-width: 2;
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.nav_rating-pages {
+  width: 16.15vw;
+  height: 4.16vw;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 2.083vw;
+  padding: 1.51vw 3.3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.nav_rating-pages a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.2;
+  font-size: 1.04vw;
+  margin-top: 0.156vw;
+}
+
+.nav_rating-pages a:hover {
+  color: #00A3FF;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.nav-hr {
+  width: 34.45vw;
+  height: 0.052vw;
+  background: rgba(255, 255, 255, 0.07);
+  border: none;
+}
+
+.nav-hr {
+  margin: 0;
+}
+
+.investor-link:first-of-type::before, .investor-link:nth-of-type(2)::before, .investor-link:nth-of-type(3)::before {
+  content: '#2';
+  width: 5vw;
+  height: 5vw;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 6vw;
+  margin-right: -4.5vw;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 27px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.investor-link:first-of-type::before {
+  content: '#1';
+  color: #00A3FF;
+}
+
+.investor-link:nth-of-type(3)::before {
+  content: '#3';
+}
+
+@media(max-width: 1200px) {
+  .investor-link::before {
+    width: 7vw !important;
+    height: 7vw !important;
+    right: 8vw !important;
+    margin-right: -7vw !important;
+    border-radius: 3vw !important;
+  }
+}
+
+@media(max-width: 640px) {
+  .investor-link::before {
+    width: 9vw !important;
+    margin-top: -16vw !important;
+    height: 9vw !important;
+    right: 12vw !important;
+    margin-right: -9vw !important;
+    border-radius: 3vw !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .investor-link::before {
+    font-size: 4vw !important;
+  }
+}
+
+.nav-hr :last-of-type {
+  margin-left: 1.04vw;
+}
+
+.nav-hr :first-of-type {
+  margin-right: 1.04vw;
+}
+
+.investors_container {
+  height: 41.875vw;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 2.083vw;
+  margin-top: 1.4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.buy {
+  color: #56CF12;
+}
+
+.sell {
+  color: #FF4E4E;
+}
+
+.columns_names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  margin-top: 1.8vw;
+  margin-left: 4.7vw;
+  width: 61.82vw;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.78vw;
+  line-height: 0.9vw;
+}
+
+.investors-name {
+  margin-right: 13.6vw;
+}
+
+.investors-profit {
+  margin-right: 6.6vw;
+}
+
+.investors-coins {
+  margin-right: 14.9vw;
+}
+
+.investors-perfomance {
+  margin-right: 7.5vw;
+}
+
+.investors_list {
+  width: 85.36vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.about-investor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 15.625vw;
+}
+
+.about-investor div:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 0.88vw;
+}
+
+.about-investor div:last-of-type a {
+  margin-bottom: 0.52vw;
+}
+
+.profit-percent {
+  width: 8.54vw;
+}
+
+.using-coins {
+  width: 16.875vw;
+}
+
+.perfomance {
+  width: 13.177vw;
+  line-height: 0.1vw;
+  font-size: 0.8vw;
+}
+
+.last-transaction {
+  width: 6.25vw;
+}
+
+.follow-button {
+  position: relative;
+  margin-left: 3.9vw;
+  width: 13.23vw;
+  height: 4.32vw;
+  background: rgba(255, 255, 255, 0.015);
+  border-radius: 2.083vw;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  font-size: 1.04vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.follow-button span {
+  color: #FFFFFF;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  opacity: 0.3;
+}
+
+.follow-button:hover {
+  cursor: pointer;
+  background: #00A3FF;
+}
+
+.follow-button:hover span {
+  color: #fff;
+  font-weight: bold;
+  opacity: 1;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+h1, h2 {
+  color: #fff;
+  font-style: normal;
+  font-size: 3.125vw;
+}
+
+.avatar-img {
+  width: 3.125vw;
+  height: 3.125vw;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/avatar.jpg");
+}
+
+.investor-profile-link {
+  font-family: Montserrat !important;
+  font-weight: normal;
+  font-size: 1.3vw;
+  line-height: 1.56vw;
+  color: #FFFFFF;
+}
+
+.profile-followers {
+  font-family: Montserrat !important;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.78vw;
+  line-height: 0.93vw;
+  color: #FFFFFF;
+}
+
+.profit-desc {
+  font-family: Montserrat;
+  font-size: 0.78vw;
+  line-height: 1.3vw;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.profit-desc span {
+  font-weight: normal;
+  font-size: 1.04vw;
+  line-height: 1.3vw;
+  font-family: Montserrat;
+  color: rgba(0, 163, 255, 0.4);
+}
+
+a {
+  text-decoration: none;
+}
+
+.using-coins {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-right: 3.5vw;
+}
+
+.coin {
+  height: 1.09vw;
+  width: 1.09vw;
+  margin-right: 0.26vw;
+  margin-bottom: 0.26vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/bitcoin.png");
+}
+
+.investor-link {
+  height: 6.6vw;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  width: 83.28vw;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 2.083vw;
+  padding: 0 2.44vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.investor-link div, .investor-link p, .investor-link span {
+  font-family: Montserrat;
+}
+
+.follow-button span {
+  font-size: 20px !important;
+}
+
+.investor-link span {
+  font-size: 0.8vw;
+  line-height: 1.3vw;
+}
+
+.investor-link:not(:last-of-type) {
+  margin-bottom: 0.78vw;
+}
+
+.investor-link:last-of-type {
+  margin-bottom: 1.4vw;
+}
+
+.investor-link:hover {
+  cursor: pointer;
+  width: 85.36vw;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.investor-link:hover .profile-followers {
+  opacity: 1;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.investor-link:hover a {
+  color: #00A3FF;
+  opacity: 1;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.investor-link:hover .profit-desc {
+  color: #fff;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.investor-link:hover .profit-desc span {
+  color: #00A3FF;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.investor-link:hover .coin {
+  height: 1.14vw;
+  width: 1.14vw;
+}
+
+.investor-link:hover .perfomance {
+  color: #fff;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  opacity: 1;
+}
+
+.investor-link:hover .perfomance span {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  color: #00a3ff;
+}
+
+.investor-link:hover .last-transaction {
+  opacity: 1;
+}
+
+.perfomance {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.perfomance span {
+  font-size: 0.78vw !important;
+  color: rgba(0, 163, 255, 0.4);
+  font-weight: normal;
+  font-size: 1.04vw;
+}
+
+.last-transaction {
+  font-weight: 400;
+  font-size: 0.78vw;
+  line-height: 1.2vw;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+
+.last_comments_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 81.6vw;
+  margin-bottom: 2.13vw;
+}
+
+.last_comments-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.last_comments-hr {
+  height: 0.052vw;
+  margin: 0;
+  width: 26.7vw;
+  background: rgba(255, 255, 255, 0.07);
+  border: none;
+}
+
+.last_comments_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 23.54vw;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 2.083vw;
+  padding: 2.6vw 5.73vw;
+}
+
+.comment_container {
+  width: 32.34vw;
+  height: 7.5vw;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 2.08vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 1.3vw;
+  font-size: 0.78vw;
+}
+
+.comment-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.comment-title a {
+  text-decoration: none;
+}
+
+.comment-date {
+  font-size: 0.625vw;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.comment-authors-name {
+  font-family: Montserrat;
+  font-weight: 400;
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+
+.comment-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 0.625vw;
+}
+
+.comment-body p:first-of-type {
+  margin: 0;
+  margin-bottom: 0.6vw;
+}
+
+.comment_link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.coin_image {
+  width: 3.7vw;
+}
+
+.comment_link {
+  width: 5vw;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  /* identical to box height, or 167% */
+  color: #FFFFFF;
+}
+
+.comment-text {
+  margin-left: 1.09vw;
+  color: #FFFFFF;
+}
+
+.comment-text P {
+  font-family: Montserrat;
+  font-size: 0.625vw;
+  font-weight: 500;
+}
+
+.comment-text p span {
+  color: #00A3FF;
+  font-family: Montserrat;
+  font-size: 0.625vw;
+  font-weight: 500;
+}
+
+.comment-text p {
+  white-space: nowrap;
+  width: 25vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Montserrat;
+  font-size: 0.625vw;
+  font-weight: 500;
+}
+
+.comment-text p:last-of-type {
+  font-family: Montserrat !important;
+  font-size: 1.03vw;
+  font-weight: 500;
+  margin: 0;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 2.55vw;
+  margin-top: 0.52vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.footer span {
+  font-family: Rany;
+  font-weight: 300;
+  font-size: 1.04vw;
+  line-height: 0.94vw;
+  color: #FFFFFF;
+  opacity: 0.2;
+}
+
+footer .footer_link {
+  opacity: 1 ;
+  margin-top: 0.73vw;
+  font-size: 1.1vw;
+  line-height: 1.3vw;
+  color: #00A3FF;
+}
+
+.profile_subscription {
+  width: 14.9vw;
+  height: 4.4vw;
+  border: 1px solid #00A3FF;
+  border-radius: 2vw;
+  margin: 0 2vw 0 2vw;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3vw;
+  line-height: 1.56vw;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  color: #00A3FF;
+}
+
+.profile_subscription:hover {
+  cursor: pointer;
+}
+
+.columns_names>span:first-of-type {
+  margin-left: 1vw !important;
+}
+
+.coin_name {
+  margin-right: 11.8vw !important;
+}
+
+.follow:hover {
+  background-color: rgba(0, 163, 255, 0.01);
+}
+
+.unfollow {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #FFFFFF;
+  opacity: 0.3;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.unfollow:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 1480px) {
+  .coin_image {
+    width: 3vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .coin_image {
+    width: 5vw;
+  }
+  .comment-text p {
+    width: 70vw;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+  .profile_subscription {
+    margin: 0;
+    width: 33%;
+    height: 7vw;
+    font-size: 3vw;
+    margin-left: 12%;
+  }
+}
+
+@media (max-width: 640px) {
+  .profile_subscription {
+    position: absolute;
+    bottom: -2.8vw;
+    right: -2.2vw;
+    border-radius: 8.7vw;
+    -webkit-backdrop-filter: blur(4.3vw);
+    backdrop-filter: blur(4.3vw);
+    border-radius: 8.7vw;
+    margin: 0;
+    padding: 18.7vw 9.3vw 4.5vw 9.5vw;
+    width: auto;
+    font-size: 3vw;
+    height: auto;
+    color: #FFFFFF;
+    background-color: #00A3FF;
+    background-image: url(./../img/follow.svg);
+    background-repeat: no-repeat;
+    background-size: 11vw;
+    background-position: center 6vw;
+  }
+  .follow {
+    color: #FFFFFF !important;
+    background-color: #00A3FF !important;
+  }
+  .unfollow {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+}

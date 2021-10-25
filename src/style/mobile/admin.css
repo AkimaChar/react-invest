@@ -1,0 +1,708 @@
+@media (min-width: 641px) and (max-width: 1200px) {
+  body {
+    width: auto;
+    margin-left: 4.25vw !important;
+  }
+}
+
+@media (max-width: 920px) {
+  li:not(:last-of-type)::after {
+    content: '';
+    position: absolute;
+    left: -16.25vw;
+    top: 6.1vw;
+    width: 55vw;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+}
+
+@media (max-width: 1200px) {
+  ._hr {
+    width: 27.2vw;
+  }
+  .h1_title {
+    margin-bottom: 5vw;
+    margin-top: 3vw;
+  }
+  .list-group-item {
+    font-size: 1.5vw !important;
+  }
+  li:not(:last-of-type)::after {
+    content: '';
+    position: absolute;
+    left: -16.25vw;
+    width: 55vw;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  .com_cont div {
+    padding: 0 2vw;
+  }
+  .com_cont {
+    padding: 2vw 2.5vw;
+    margin-top: 42vw;
+    margin-left: -10vw;
+    border-radius: 20px;
+  }
+  .symbols_num, .symbols_num~button {
+    font-size: 1.5vw !important;
+    margin-top: 1vw;
+  }
+  #text-counter_3 {
+    padding: 2vw 2.5vw;
+    width: 40vw !important;
+    height: 30vw !important;
+  }
+  .admin_container>div h1 {
+    font-size: 4vw;
+  }
+  .coin_forecast {
+    padding: 1vw 1vw;
+  }
+  .open-com::before {
+    height: 4vw;
+    border-radius: 15px;
+    width: 4vw;
+  }
+  .open-com {
+    background-size: 1.5vw;
+    margin: 0 1vw;
+  }
+  p {
+    font-size: 1.3vw;
+    line-height: 147%;
+    margin: 0;
+  }
+  .profile_followers span, .profile_success span, .profile_profit span {
+    font-size: 1.3vw;
+    line-height: 147%;
+  }
+  .profile_followers, .profile_success, .profile_profit {
+    width: auto;
+    height: auto;
+    padding: 1vw 2.3vw;
+  }
+  .title-block {
+    border-radius: 2vw 2vw 0px 0px;
+  }
+  .coins_block {
+    border-radius: 2vw;
+    right: 5vw;
+  }
+  .portfolio_admin-title {
+    width: 100%;
+  }
+  .coin_row {
+    width: auto;
+    height: auto;
+    padding: 2vw 4vw;
+  }
+  .btc:before, .eth:before {
+    height: 3vw;
+    width: 3vw;
+    position: absolute;
+    margin-top: -0.9vw;
+    margin-left: -4.3vw;
+  }
+  .eth, .btc {
+    margin-left: 3.5vw;
+  }
+  .coin_row>a {
+    font-size: 1.5vw;
+    line-height: 120%;
+  }
+  label[for='search_input'] {
+    font-size: 2.2vw;
+    line-height: 123%;
+  }
+  .search_input {
+    width: 18vw;
+    height: auto;
+    border-radius: 2vw;
+    font-size: 1.3vw;
+    line-height: 125%;
+    padding: 1vw 0;
+    padding-left: 3.5vw;
+    background-size: 2vw;
+  }
+  .search_block {
+    margin-top: 5.1vw;
+    margin-bottom: 3vw;
+  }
+  .history_container {
+    width: 100%;
+  }
+  .admin_coin-list, .history_coin-list {
+    border-radius: 2vw;
+  }
+  .columns_names {
+    margin-top: 2vw;
+  }
+  .admin_coin_plank {
+    width: 97%;
+    border-radius: 2vw;
+    margin-bottom: 2vw;
+  }
+  .admin_coin_plank>*>*>* {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.04vw;
+    line-height: 1.56vw;
+  }
+  .coin_percentage>input[type='text'], .coin_mount>input[type='text'] {
+    font-size: 1.2vw;
+    line-height: 150%;
+    border-radius: 2vw;
+  }
+  #minusM, #minus, #plus, #plusM {
+    font-size: 1.5vw;
+    line-height: 125%;
+  }
+  div label[for='Decrease'] {
+    margin-left: 0.5vw;
+  }
+  div label[for='Increase'] {
+    margin-right: 0.5vw;
+  }
+  form.admin_coin_plank {
+    font-size: 1.3vw;
+  }
+  .security_container>img {
+    width: 4vw;
+    height: 4vw;
+  }
+  .coin_forecast>*, .coin_forecast>*>*>* {
+    font-size: 1.1vw;
+    line-height: 150%;
+  }
+  .coin_action {
+    width: auto;
+    padding: 1.2vw 2.2vw;
+    border-radius: 2vw;
+  }
+  div label[for='buy'] {
+    margin-right: 0.5vw;
+  }
+  div label[for='sell'] {
+    margin-left: 0.5vw;
+  }
+  .edit {
+    font-size: 1.2vw;
+    line-height: 125%;
+    margin-right: 1vw;
+  }
+  .forecast_action {
+    margin: 0 1vw;
+  }
+  .coin_forecast {
+    width: auto;
+    border-radius: 2vw;
+  }
+  .coin_price, .coin_sum {
+    font-size: 1.2vw;
+    line-height: 125%;
+  }
+  html[lang='ru'] body.admin_page div.columns_names>span,
+  html[lang='ru'] body.admin_page .createDeal {
+    font-size: 0.83vw;
+    line-height: 120%;
+  }
+  div.columns_names {
+    margin-bottom: 1vw;
+  }
+  span.admin_coin_cost {
+    margin-left: 1.2vw;
+    margin-right: 2.7vw;
+  }
+  .admin_coin-list div.columns_names span.admin_coin_cost {
+    margin-right: 4vw;
+  }
+  span.admin_coin_sum {
+    margin-left: 2.7vw;
+    margin-right: 8vw;
+  }
+  span.admin_coin_pred {
+    margin-right: 8vw;
+  }
+  .history_title ._hr {
+    width: 31vw;
+  }
+  .history-coin_comm p {
+    font-size: 1.2vw;
+    line-height: 153%;
+  }
+  .admin_coin-list div.columns_names span.admin_coin_com {
+    margin-right: 13.7vw;
+  }
+  .history-coin_action span.buy {
+    font-size: 1.2vw;
+    line-height: 125%;
+  }
+  .history_coin-list div.columns_names span.coin_name {
+    margin-right: 5.5vw !important;
+  }
+  .history_coin-list div.columns_names span.admin_coin_cost {
+    margin-right: 9.5vw;
+  }
+  .history_coin-list div.columns_names span.admin_coin_com {
+    margin-left: 3vw;
+    margin-right: 13.4vw;
+  }
+  .history-coin_forecast p span, .coin_price span {
+    font-size: 1.2vw;
+    line-height: 150%;
+  }
+  .admin_coin-list div.columns_names span.admin_coin_pred {
+    margin-right: 6.7vw;
+  }
+  .admin_coin-list div.columns_names span.admin_coin_mount {
+    margin-right: 1vw;
+  }
+  .history_coin-list div.columns_names span.admin_coin_cost {
+    margin-left: 5.8vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .admin_container>div:first-of-type, .history_title {
+    width: 100%;
+    position: relative;
+  }
+  #price, #coinsum {
+    font-size: 3.30vw;
+    width: 100%;
+  }
+  .coin_sum, .coin_price {
+    width: 20%;
+  }
+  #multiple-select-container-1>.form-control:first-of-type {
+    width: 64.69vw;
+    height: 13.49vw;
+    padding-left: 10vw;
+    background-size: 6vw;
+    background-position: 2vw center;
+  }
+  div.dropdown-select>div.p-2>input.form-control {
+    width: 62.69vw;
+    height: 13.49vw;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    padding-left: 5vw;
+    font-size: 3.04vw;
+    line-height: 1.30vw;
+  }
+  .com_cont div {
+    padding: 0 2vw;
+  }
+  .com_cont {
+    padding: 2vw 2.5vw;
+    margin-top: -67vw;
+    margin-left: 5vw;
+    border-radius: 20px;
+  }
+  .symbols_num, .symbols_num~button {
+    font-size: 2.5vw;
+  }
+  #text-counter_3 {
+    padding: 2vw 2.5vw;
+    width: 60vw !important;
+    height: 50vw !important;
+  }
+  .admin_container>div:first-of-type ._hr, .history_title ._hr {
+    position: absolute;
+    width: 17vw !important;
+    height: 1px;
+    top: calc((100% - 1px) / 2);
+  }
+  div ._hr:first-of-type {
+    left: -3vw;
+  }
+  div ._hr:last-of-type {
+    right: -3vw;
+  }
+  .admin_container>div:first-of-type h1, .history_title h1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 8.7vw !important;
+    line-height: 18vw;
+  }
+  .profile_followers span, .profile_success span, .profile_profit span, p {
+    font-size: 3.7vw;
+  }
+  .profile_followers, .profile_success, .profile_profit {
+    width: auto;
+    height: auto;
+    padding: 4.7vw 10.2vw;
+    text-align: center;
+  }
+  .coins_block {
+    display: none;
+  }
+  .title-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8.7vw;
+    border: none;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .portfolio_admin-title {
+    width: 100%;
+  }
+  .profile_success {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  label[for='search_input'] {
+    font-size: 7.6vw;
+    margin-bottom: 5vw;
+  }
+  .search_input {
+    width: 61vw;
+    border-radius: 8.7vw;
+    font-size: 4.3vw;
+    padding: 4.7vw 5.65vw;
+    padding-left: 13.9vw;
+    background-position: 5.65vw center;
+    background-size: 4.7vw;
+    margin: 0;
+  }
+  .search_block {
+    flex-direction: column;
+    margin-top: 7.4vw;
+    margin-bottom: 8vw;
+  }
+  .admin_coin-list, .history_coin-list {
+    border-radius: 8.7vw;
+  }
+  .history_coin-list {
+    border-radius: 8.7vw;
+    background: rgba(255, 255, 255, 0.02);
+  }
+  .columns_names {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    margin-top: 1vw;
+  }
+  .admin_coin-list .columns_names .admin_coin_mount, .admin_coin-list .columns_names .admin_coin_pred, .admin_coin-list .columns_names .admin_coin_com, .admin_coin-list .columns_names .admin_coin_action {
+    display: none !important;
+  }
+  .admin_coin_plank {
+    flex-wrap: wrap;
+    width: 94%;
+    border-radius: 8.7vw;
+    padding: 5.2vw 5.6vw;
+    margin-bottom: 5vw;
+  }
+  .admin_coin_plank>*>*>* {
+    font-size: 5.4vw;
+    line-height: 1;
+  }
+  .coin_percentage>input[type='text'] {
+    display: none;
+  }
+  #minus:hover, #plus:hover {
+    display: none;
+  }
+  #minus, #plus {
+    display: none;
+  }
+  .forecast_action>*>*, .forecast_action {
+    font-size: 3.1vw;
+    line-height: 55px;
+  }
+  form.admin_coin_plank {
+    font-size: 4.3vw;
+  }
+  .open-com::before {
+    width: 9vw;
+    height: 9vw;
+  }
+  .close-com::before {
+    font-size: 7vw;
+  }
+  .open-com {
+    width: 4vw;
+    height: 4vw;
+    background-size: 4vw;
+  }
+  .admin_coin-list .security_container {
+    order: 1;
+  }
+  .admin_coin-list .coin_price {
+    order: 2;
+  }
+  .admin_coin_plank .coin_mount {
+    order: 4;
+    width: 100%;
+    padding: 8vw 0 4.5vw 0;
+    margin-top: 4.5vw;
+  }
+  .admin_coin-list .coin_sum {
+    order: 3;
+  }
+  .admin_coin-list .coin_forecast {
+    order: 5;
+    margin-bottom: 3vw;
+  }
+  .admin_coin-list .coin_comment {
+    order: 6;
+    width: 100%;
+    padding: 10vw 0 4.5vw 0;
+    margin-bottom: 5vw;
+  }
+  .select-month, #days {
+    font-size: 4vw;
+  }
+  .admin_coin-list .coin_comment span {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 4.3vw;
+    line-height: 115%;
+    color: #ffffff;
+    opacity: 0.4;
+  }
+  .admin_coin-list .coin_comment, .admin_coin-list .coin_forecast, .admin_coin-list .coin_sum, .admin_coin_plank .coin_mount {
+    position: relative;
+  }
+  .admin_coin-list .coin_comment::before, .admin_coin-list .coin_forecast::before, .admin_coin_plank .coin_mount::before {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 79.5vw;
+    background: rgba(255, 255, 255, 0.07);
+    top: 0;
+    left: -5.4vw;
+  }
+  .admin_coin-list .coin_comment::after, .admin_coin-list .coin_forecast::after, .admin_coin_plank .coin_mount::after {
+    position: absolute;
+    font-size: 2.8vw;
+    line-height: 3.4vw;
+    top: 3.4vw;
+    left: 0;
+    font-weight: 200;
+    font-family: Montserrat;
+  }
+  .admin_coin_plank .coin_comment::after {
+    content: 'Комментарий по прогнозу';
+  }
+  .admin_coin_plank .coin_forecast::after {
+    content: 'Forecast';
+  }
+  .admin_coin_plank .coin_mount::after {
+    content: 'Кол-во';
+  }
+  .security_container>img {
+    margin-right: 2.8vw;
+    width: 10.2vw;
+    height: 10.2vw;
+  }
+  .admin_coin_plank {
+    position: relative;
+  }
+  .admin_coin-list .admin_coin_plank::before {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 79.5vw;
+    background: rgba(255, 255, 255, 0.07);
+    bottom: 10.1vw;
+    left: 0;
+  }
+  .coin_action {
+    width: auto;
+    margin: 0 auto;
+    padding: 6.7vw 9.1vw;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 8.7vw;
+    position: absolute;
+    left: 8.5vw;
+    bottom: -15vw;
+  }
+  .edit {
+    font-size: 4.3vw;
+  }
+  .coin_forecast {
+    padding: 10vw 0 5.4vw 0;
+    width: 100%;
+    background: transparent;
+    border-radius: 0;
+  }
+  .coin_price, .coin_sum {
+    font-size: 4.3vw;
+  }
+  html[lang='ru'] body.admin_page .createDeal {
+    margin-top: 15vw;
+    margin-bottom: 20px;
+  }
+
+  html[lang='ru'] body.admin_page div.columns_names>span,
+  html[lang='ru'] body.admin_page .createDeal {
+    font-size: 2.8vw;
+  }
+  div.columns_names {
+    padding: 4.3vw 8vw;
+    margin: 0;
+  }
+  .columns_names>span:first-of-type {
+    margin: 0 !important;
+    margin-right: 29vw !important;
+  }
+  .admin_coin-list span.admin_coin_sum {
+    margin: 0;
+    margin-left: auto;
+    margin-right: 1vw;
+  }
+  .admin_coin_plank .coin_mount {
+    padding-top: 10vw;
+  }
+  .history-coin_comm {
+    width: 100%;
+    padding: 10vw 0 4.5vw 0;
+    position: relative;
+    margin-top: 4.5vw;
+  }
+  .history-coin_comm p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 4.3vw;
+    line-height: 115%;
+    color: #ffffff;
+    opacity: 0.4;
+    margin: 0;
+  }
+  .history-coin_comm::after, .history-coin_action::after {
+    position: absolute;
+    font-size: 2.8vw;
+    line-height: 3.4vw;
+    top: 3.4vw;
+    left: 0;
+    font-weight: 200;
+    font-family: Montserrat;
+    color: #ffffff;
+  }
+  .history-coin_comm::after {
+    content: 'Комментарий по прогнозу';
+  }
+  .history-coin_comm::before, .history-coin_action::before {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 79.8vw;
+    background: rgba(255, 255, 255, 0.07);
+    top: 0;
+    left: -5.8vw;
+  }
+  div.admin_coin_plank {
+    padding: 5.2vw 5.6vw;
+    margin-bottom: 5vw;
+  }
+  .admin_coin_plank:hover {
+    transform: scale(1);
+    cursor: pointer;
+  }
+  .history_coin-list .security_container a {
+    font-size: 4.3vw;
+  }
+  .history_title h1 {
+    margin-top: 15.3vw;
+  }
+  .history_title ._hr {
+    top: 24vw;
+  }
+  .history_coin-list div.columns_names {
+    margin: 0;
+  }
+  .history-coin_action {
+    position: relative;
+    width: 100%;
+    padding-top: 10vw;
+  }
+  .history-coin_action::after {
+    content: 'Действие';
+  }
+  .history-coin_action span.buy {
+    font-size: 4.3vw;
+  }
+  .history_coin-list div.columns_names span.coin_name {
+    margin-right: 22.5vw !important;
+  }
+  .history_coin-list div.columns_names span.admin_coin_cost {
+    margin: 0;
+    margin-right: 9vw;
+  }
+  .history_coin-list div.columns_names span.admin_coin_pred {
+    margin: 0;
+  }
+  .history_coin-list div.columns_names span.admin_coin_com, .history_coin-list div.columns_names span.admin_coin_action {
+    display: none;
+  }
+  .history-coin_forecast p span, .coin_price span {
+    font-size: 4.3vw;
+  }
+  .admin_coin-list .coin_mount {
+    display: flex;
+    align-items: center;
+  }
+  .admin_coin-list .coin_mount #minusM, .admin_coin-list .coin_mount #plusM {
+    font-size: 5vw;
+    line-height: 1vw;
+  }
+  .admin_coin-list .coin_mount #number {
+    width: 12vw;
+    font-size: 4vw;
+    border-radius: 8.7vw;
+    margin: 0 2.5vw;
+  }
+  .admin_coin-list span.admin_coin_cost {
+    margin-left: 23.5vw;
+  }
+  .admin_coin-list div.columns_names span.admin_coin_sum {
+    margin-right: 2.3vw;
+  }
+  .history_coin-list div.columns_names span.admin_coin_cost {
+    margin-left: 1vw;
+  }
+}
+
+@media (max-width: 640px) {
+  .admin_container>div:first-of-type h1 {
+    margin-top: 0;
+  }
+  body.admin_page {
+    margin-left: -3.8vw;
+  }
+  html[lang='ru'] body.admin_page .createDeal {
+    font-size: 3.5vw;
+  }
+  .coin_action {
+    left: 12vw;
+  }
+  .columns_names>span:first-of-type {
+    margin-right: 32.5vw !important;
+  }
+  .history_coin-list div.columns_names span.coin_name {
+    margin-right: 26vw !important;
+  }
+  .history_coin-list div.columns_names span.admin_coin_cost {
+    margin-right: 12vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .symbols_num, .symbols_num~button {
+    font-size: 2.5vw !important;
+    margin-top: 1vw;
+  }
+  .com_cont {
+    margin-top: -77vw;
+  }
+}
