@@ -204,7 +204,7 @@ body {
   border-radius: 40px;
 }
 
-form {
+.auth_container form {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;

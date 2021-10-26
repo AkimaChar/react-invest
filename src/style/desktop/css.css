@@ -1,10 +1,26 @@
-*, ::after, ::before {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+::after,
+::before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: 'Rany';
+  font-family: "Rany";
   font-style: normal;
   font-weight: lighter;
   -webkit-overflow-scrolling: touch;
+}
+
+img {
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
 }
 
 .dev_tool-link {
@@ -22,7 +38,7 @@
   left: 0;
 }
 
-.dev_tool-link>a {
+.dev_tool-link > a {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
@@ -30,10 +46,10 @@
   text-decoration: none;
   line-height: 30px;
   /* or 120% */
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.dev_tool-link>a:not(:last-of-type) {
+.dev_tool-link > a:not(:last-of-type) {
   margin-right: 5px;
 }
 
@@ -54,7 +70,8 @@ hr {
   transform: matrix(0, -1, -1, 0, 0, 0);
 }
 
-body, html {
+body,
+html {
   margin: 0;
   overflow-x: hidden;
 }
@@ -122,7 +139,8 @@ body {
   margin-bottom: 0.52vw;
 }
 
-.aside-body a, .aside-body button {
+.aside-body a,
+.aside-body button {
   color: #fff;
   text-decoration: none;
   opacity: 0.2;
@@ -144,27 +162,35 @@ body {
   font-size: 0.78vw;
   line-height: 0.8854vw;
   text-align: center;
+  transition: 300ms;
 }
 
 .aside-body a {
   margin-bottom: 2.6vw;
 }
 
-.aside-body a:last-of-type {
+.aside-body .last-child {
   margin-top: auto;
 }
 
-.aside-body a:hover {
+.aside-body a:hover,
+.aside-body button:hover {
   cursor: pointer;
+  color: #00a3ff;
+  opacity: 1;
 }
 
 .aside-body a:hover img {
-  background-color: #00A3FF;
-  color: #00A3FF;
+  background-color: #00a3ff;
+  color: #00a3ff;
+}
+.aside-body button:hover svg path {
+  fill: #00a3ff;
+  opacity: 1;
 }
 
 .aside-body a::before:not(:last-of-type) {
-  content: '';
+  content: "";
   position: absolute;
   width: 5.2vw;
   height: 5.2vw;
@@ -200,7 +226,7 @@ body {
   margin-left: 0.52vw;
 }
 
-.aside-body>svg {
+.aside-body > svg {
   width: 4.323vw;
   height: 4.323vw;
   margin-bottom: 1.2vw;
@@ -226,7 +252,9 @@ button {
   padding: 0;
 }
 
-button :active, button :hover, button :focus {
+button :active,
+button :hover,
+button :focus {
   padding: 0;
   border: none;
   font: inherit;
@@ -239,20 +267,20 @@ a:hover {
   opacity: 1;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  color: #00A3FF;
+  color: #00a3ff;
 }
 
-a:hover svg>path {
-  fill: #00A3FF;
+a:hover svg > path {
+  fill: #00a3ff;
   opacity: 1;
 }
 
-a:hover svg>g {
+a:hover svg > g {
   opacity: 1;
 }
 
-a:hover svg>g path {
-  stroke: #00A3FF;
+a:hover svg > g path {
+  stroke: #00a3ff;
 }
 
 svg:nth-of-type(2) {
@@ -320,7 +348,7 @@ nav {
 }
 
 .nav_rating-pages a:hover {
-  color: #00A3FF;
+  color: #00a3ff;
   opacity: 1;
   cursor: pointer;
 }
@@ -336,8 +364,10 @@ nav {
   margin: 0;
 }
 
-.investor-link:first-of-type::before, .investor-link:nth-of-type(2)::before, .investor-link:nth-of-type(3)::before {
-  content: '#2';
+.investor-link:first-of-type::before,
+.investor-link:nth-of-type(2)::before,
+.investor-link:nth-of-type(3)::before {
+  content: "#2";
   width: 5vw;
   height: 5vw;
   background: rgba(255, 255, 255, 0.03);
@@ -357,15 +387,15 @@ nav {
 }
 
 .investor-link:first-of-type::before {
-  content: '#1';
-  color: #00A3FF;
+  content: "#1";
+  color: #00a3ff;
 }
 
 .investor-link:nth-of-type(3)::before {
-  content: '#3';
+  content: "#3";
 }
 
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
   .investor-link::before {
     width: 7vw !important;
     height: 7vw !important;
@@ -375,7 +405,7 @@ nav {
   }
 }
 
-@media(max-width: 640px) {
+@media (max-width: 640px) {
   .investor-link::before {
     width: 9vw !important;
     margin-top: -16vw !important;
@@ -401,7 +431,6 @@ nav {
 }
 
 .investors_container {
-  height: 41.875vw;
   background: rgba(255, 255, 255, 0.02);
   border-radius: 2.083vw;
   margin-top: 1.4vw;
@@ -421,11 +450,11 @@ nav {
 }
 
 .buy {
-  color: #56CF12;
+  color: #56cf12;
 }
 
 .sell {
-  color: #FF4E4E;
+  color: #ff4e4e;
 }
 
 .columns_names {
@@ -546,7 +575,7 @@ nav {
 }
 
 .follow-button span {
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
   opacity: 0.3;
@@ -554,7 +583,7 @@ nav {
 
 .follow-button:hover {
   cursor: pointer;
-  background: #00A3FF;
+  background: #00a3ff;
 }
 
 .follow-button:hover span {
@@ -572,10 +601,12 @@ header {
   justify-content: center;
 }
 
-h1, h2 {
+body h1,
+body h2 {
   color: #fff;
   font-style: normal;
   font-size: 3.125vw;
+  font-weight: normal;
 }
 
 .avatar-img {
@@ -592,7 +623,7 @@ h1, h2 {
   font-weight: normal;
   font-size: 1.3vw;
   line-height: 1.56vw;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .profile-followers {
@@ -601,7 +632,7 @@ h1, h2 {
   font-weight: 300;
   font-size: 0.78vw;
   line-height: 0.93vw;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .profit-desc {
@@ -661,7 +692,9 @@ a {
   align-items: center;
 }
 
-.investor-link div, .investor-link p, .investor-link span {
+.investor-link div,
+.investor-link p,
+.investor-link span {
   font-family: Montserrat;
 }
 
@@ -695,7 +728,7 @@ a {
 }
 
 .investor-link:hover a {
-  color: #00A3FF;
+  color: #00a3ff;
   opacity: 1;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
@@ -708,7 +741,7 @@ a {
 }
 
 .investor-link:hover .profit-desc span {
-  color: #00A3FF;
+  color: #00a3ff;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
@@ -750,7 +783,7 @@ a {
   font-weight: 400;
   font-size: 0.78vw;
   line-height: 1.2vw;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.4;
 }
 
@@ -845,14 +878,14 @@ a {
 
 .comment-date {
   font-size: 0.625vw;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.7;
 }
 
 .comment-authors-name {
   font-family: Montserrat;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.3;
 }
 
@@ -893,12 +926,12 @@ a {
   font-size: 15px;
   line-height: 25px;
   /* identical to box height, or 167% */
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .comment-text {
   margin-left: 1.09vw;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .comment-text P {
@@ -908,7 +941,7 @@ a {
 }
 
 .comment-text p span {
-  color: #00A3FF;
+  color: #00a3ff;
   font-family: Montserrat;
   font-size: 0.625vw;
   font-weight: 500;
@@ -954,22 +987,22 @@ a {
   font-weight: 300;
   font-size: 1.04vw;
   line-height: 0.94vw;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.2;
 }
 
 footer .footer_link {
-  opacity: 1 ;
+  opacity: 1;
   margin-top: 0.73vw;
   font-size: 1.1vw;
   line-height: 1.3vw;
-  color: #00A3FF;
+  color: #00a3ff;
 }
 
 .profile_subscription {
   width: 14.9vw;
   height: 4.4vw;
-  border: 1px solid #00A3FF;
+  border: 1px solid #00a3ff;
   border-radius: 2vw;
   margin: 0 2vw 0 2vw;
   font-family: Montserrat;
@@ -979,14 +1012,14 @@ footer .footer_link {
   line-height: 1.56vw;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
-  color: #00A3FF;
+  color: #00a3ff;
 }
 
 .profile_subscription:hover {
   cursor: pointer;
 }
 
-.columns_names>span:first-of-type {
+.columns_names > span:first-of-type {
   margin-left: 1vw !important;
 }
 
@@ -1001,7 +1034,7 @@ footer .footer_link {
 .unfollow {
   border: none;
   background-color: rgba(255, 255, 255, 0.05);
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.3;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
@@ -1050,19 +1083,39 @@ footer .footer_link {
     width: auto;
     font-size: 3vw;
     height: auto;
-    color: #FFFFFF;
-    background-color: #00A3FF;
+    color: #ffffff;
+    background-color: #00a3ff;
     background-image: url(./../img/follow.svg);
     background-repeat: no-repeat;
     background-size: 11vw;
     background-position: center 6vw;
   }
   .follow {
-    color: #FFFFFF !important;
-    background-color: #00A3FF !important;
+    color: #ffffff !important;
+    background-color: #00a3ff !important;
   }
   .unfollow {
     background-color: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.6);
   }
+}
+
+.ant-message-notice .ant-message-notice-content {
+  background: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+}
+
+.ant-message-notice .ant-message-notice-content span {
+  font-weight: bold;
+  color: #fff;
+}
+
+.error-message-custom .ant-message-notice-content span.anticon {
+  color: rgb(214, 52, 52);
+}
+.warning-message-custom .ant-message-notice-content span.anticon {
+  color: rgb(214, 144, 52);
+}
+.success-message-custom .ant-message-notice-content span.anticon {
+  color: rgb(79, 214, 52);
 }

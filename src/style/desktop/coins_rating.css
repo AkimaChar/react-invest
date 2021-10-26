@@ -206,7 +206,7 @@ span.decrease {
   padding: 0 3vw;
 }
 
-.filter a{
+.filter button {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -216,7 +216,7 @@ span.decrease {
   color: #fff;
 }
 
-.filter a:hover {
+.filter button:hover {
   color: #00A3FF;
   cursor: pointer;
 }
