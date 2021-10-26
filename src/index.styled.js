@@ -20,3 +20,12 @@ export const Line = styled.hr`
   margin: ${({ mv }) => mv || 0}px ${({ mh }) => mh || 0}px;
   display: block;
 `;
+
+
+export const Container = styled.div``;
+
+export const GrayBlock = styled.div`
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  border-radius: 30px;
+`;

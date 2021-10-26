@@ -5,7 +5,7 @@ import { ReactComponent as Camera } from "../../assets/camera.svg";
 import Star from "../../assets/star.js";
 import * as U from "./index.styled";
 import { Input } from "antd";
-import { Line } from "../../index.styled";
+import { Line, Container } from "../../index.styled";
 import Loader from "../../components/Loader";
 const { TextArea } = Input;
 
@@ -24,7 +24,7 @@ export default function Userlayout({
   isUpdatingAvatar,
 }) {
   return (
-    <U.Container>
+    <Container>
       <Title mb={50}>Personal Details</Title>
       <U.MainInfo>
         <U.Column>
@@ -159,6 +159,6 @@ export default function Userlayout({
             ))}
         </U.SubscriptionList>
       </U.SubscriptionsSection>
-    </U.Container>
+    </Container>
   );
 }

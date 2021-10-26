@@ -1,6 +1,5 @@
 import styled from "styled-components";
-
-export const Container = styled.div``;
+import { GrayBlock } from "../../index.styled";
 
 export const MainInfo = styled.div`
   display: flex;
@@ -78,12 +77,6 @@ export const Created = styled.span`
 
 export const DateCreated = styled(Created)`
   color: #00a3ff;
-`;
-
-export const GrayBlock = styled.div`
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(20px);
-  border-radius: 30px;
 `;
 
 export const UserCreds = styled(GrayBlock)`
