@@ -144,6 +144,7 @@ textarea.ant-input {
   line-height: 147%;
   color: #ffffff;
   background-color: none;
+  width: 100%;
   max-width: 80px;
 }
 

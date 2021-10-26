@@ -4,9 +4,11 @@ import Loader from "../../components/Loader";
 import { errorMessage, successMessage, warningMessage } from "../../utils";
 import AdminLayout from "./index.layout";
 import { createDealService } from "../../services/deals";
+import { updateUserDeals } from "../../redux/slices/user";
 
 export default function Admin() {
   const { coins } = useSelector(state => state.coins);
+  const { portfolio } = useSelector(state => state.user.data);
   const [coinsList, setCoinsList] = useState();
   const [activeCoin, setActiveCoin] = useState();
   const [isCommentTextareaVisible, setCommentTextareaVisible] = useState(false);
@@ -85,7 +87,8 @@ export default function Admin() {
       if (data.error) {
         errorMessage(data.error);
       } else {
-        successMessage('Deal created')
+        updateUserDeals(data);
+        successMessage("Deal created");
       }
     }
   };
@@ -109,6 +112,7 @@ export default function Admin() {
       isCommentTextareaVisible={isCommentTextareaVisible}
       handleVisibleCommentTextarea={handleVisibleCommentTextarea}
       handleUpdateComment={handleUpdateComment}
+      deals={portfolio.deals}
     />
   ) : (
     <Loader />

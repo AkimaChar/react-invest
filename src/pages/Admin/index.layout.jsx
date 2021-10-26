@@ -4,6 +4,7 @@ import { Container } from "../../index.styled";
 import * as A from "./index.styled";
 import { Dropdown, InputNumber, Select, Input, Popover } from "antd";
 import { ReactComponent as Comment } from "../../assets/comm.svg";
+import { Link } from "react-router-dom";
 const { Option } = Select;
 const { TextArea } = Input;
 
@@ -21,6 +22,7 @@ export default function AdminLayout({
   handleUpdateComment,
   isCommentTextareaVisible,
   handleVisibleCommentTextarea,
+  deals,
 }) {
   return (
     <Container>
@@ -175,6 +177,37 @@ export default function AdminLayout({
         </A.NewDealTemplate>
       </A.NewDealContainer>
       <Title mb={20}>History</Title>
+      <A.HistoryHeader>
+        <A.HistoryText>Coin</A.HistoryText>
+        <A.HistoryText>Price</A.HistoryText>
+        <A.HistoryText>Forecast</A.HistoryText>
+        <A.HistoryText>Comment</A.HistoryText>
+        <A.HistoryText>Action</A.HistoryText>
+      </A.HistoryHeader>
+      <A.DealsList>
+        {deals.map(deal => (
+          <A.DealContainer key={deal._id}>
+            <Link to={`/coins/${deal.coin.name}`}>
+              <A.NewDeal_Coin>
+                <A.NewDeal_CoinLogo coin>
+                  <img src={deal.coin.logo} alt={deal.coin.short_name} />
+                </A.NewDeal_CoinLogo>
+                <A.NewDeal_CoinName>{deal.coin.short_name}</A.NewDeal_CoinName>
+              </A.NewDeal_Coin>
+            </Link>
+            <A.BlueText>{deal.coin.price}$</A.BlueText>
+            <A.Forecast>
+              <A.BlueText>
+                {deal.value > 0 && "+"}
+                {deal.value}%
+              </A.BlueText>
+              <span>per {deal.time}</span>
+            </A.Forecast>
+            <A.Comment>{deal.comment.content}</A.Comment>
+            <A.Action>{deal.type}</A.Action>
+          </A.DealContainer>
+        ))}
+      </A.DealsList>
     </Container>
   );
 }

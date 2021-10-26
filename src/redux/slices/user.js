@@ -17,14 +17,32 @@ const userSlice = createSlice({
     },
     updateUserData: (state, { payload }) => {
       state.data = payload;
+      state.data.portfolio.deals = state.data.portfolio.deals
+        .sort((a, b) => {
+          return new Date(b.created) - new Date(a.created);
+        })
+        .reverse();
     },
     updateUserAvatar: (state, { payload }) => {
       state.data.avatar = payload;
+    },
+    updateUserDeals: (state, { payload }) => {
+      state.data.portfolio.deals.push(payload);
+      state.data.portfolio.deals = state.data.portfolio.deals
+        .sort((a, b) => {
+          return new Date(b.created) - new Date(a.created);
+        })
+        .reverse();
     },
   },
 });
 
 const userReducer = userSlice.reducer;
-export const { logIn, logOut, updateUserData, updateUserAvatar } =
-  userSlice.actions;
+export const {
+  logIn,
+  logOut,
+  updateUserData,
+  updateUserAvatar,
+  updateUserDeals,
+} = userSlice.actions;
 export default userReducer;

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { GrayBlock } from "../../index.styled";
 
+// header
+
 export const Header = styled.div`
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -138,6 +140,8 @@ export const SearchInput = styled.input`
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAEc0lEQVR4nO2aT2wVRRzHv0OhxWIjihUMWhQNqRoqTYxB5YAHEi0mmIJGT3jw6olgiB6MxhjjvyCoMTaevNcoysE/0fgnFYkGjIrthcRUQAMcLPS1UN/Hw876pi/t2/fm7cwrcT+X3Zfs+32/85vd2ZnfrFRQUFBQUPC/xYQWAK6UdJukmyWtlNQpaUbSpKQTksYkHTPGTIb2Eg1gA/AycAQok8008BWwB7i+1f69ABYBDwE/1NHgWvwDHAA2trpNdQPcbXvbZcb26jPA/cBNwOXOf5YDfTZprwO/zpGMYaCnlW2rCdAOvMrs2/xP4GlgtUe8fuBtYMqJNwHsDOG/KYBuYMQxeh54Crgsh9irgfeqEjsELM7De9MAPcCoY+474MYAOluAU47OAWBp3jqNmuquavwQsCSg3irgsKP3PtAWSi/LTHvVbf8SEGMu0QV86ejuDa05n5HXHBPvxGi8o30FlTdNGRiMpZ0auJPkHQ1wCGiPakD/jT1nrIfTwNWxhNuc7J8PMeA14OVR5y58K5bow47oniiitf18ar1cANbEEEyntyfJ4T2fg587nA7ZF1qsfyH1fgrwifV0BugIKfSKFZoBrg0m1CBVY8G2kEJHrcgXwUQ8ADqprBne8I2zKEPkKknr7c/PfUVCYAsoI/bnZt84NRMg6VZVqkbf+4oE5JA9rsNzOp6VgHXO+ZiPQGBG7XGJpLU+AbISsMI5P+kjEJhTzvmKea+qQVYC0grORWPMtI9AYP52zrt8AmQloFznda3CLZCU572qBlkNm7DHNqDTRyAwbq+f8wmQlQD3GQs/524ct2D6h0+ArAT85pz3+ggE5hZ7nJI07hMgKwHHJKWD3z0+AoHZZI8/GmPyHwOMMSVVJhtbfARCAayU1Gd/fu0bp57R/aA99gHra14Zl0dU8f9BMBXgOqcUtj+YUAOQbMP9bD0dJ3RtEvjQik0Cq4KK1edn0FkK744huNERfDe4YG0vHcCYUwxZHkt42IqWAe/lZw4+nnM6Y1dM4R7gnBUeB7qjiVc83GsrU5BUqeOW5oHHnOyPAMsiaveS7AUAlIDbY2lXGxlykvAZzp5/QM1e4HdHt3Xb5cBikl3alMME/KwF2Oz0PMBFYCCUXr2mlpLs0qacBrbnrNEBPOs882njISmGtjwJbcBeZnMQ2NBkXAM8yOwt+BKwExigUgmeArbm1Z5mDA8CfzlmyzYRO2jgYwbgGuAJ4KeqpB7BGfDyTkIuU0iS8vnzkh5XUqBMKUn6VklFeVTJd4ETSio5XZJuULLM3iSpX7PXJmclvSBpvzHmQpXegKRhSR1KVqvbjTEf59GWpgDWAPuAs/hzHNhNxgxvQT4OKSQD2DbgTeAXKoPXXJSAb4AXgbtoYGEzRxIeaNRrlC88SDYt1iopXS+ThJIa3glJ477FDBu7+nHYYYz5qGnTlxLAffZOguSz23CbpQuVIgkqkiBJArY6A+M0sBCLuWGpSsKTrfbTEuwrdRcRVqsFBQUFBQWXKP8CyVABbmXdbTAAAAAASUVORK5CYII=");
 `;
 
+// new deal
+
 export const NewDealContainer = styled(GrayBlock)`
   padding: 25px 20px;
   background: rgba(255, 255, 255, 0.02);
@@ -146,7 +150,7 @@ export const NewDealContainer = styled(GrayBlock)`
 
 export const NewDealHeader = styled.div`
   display: grid;
-  grid-template-columns: 120px 80px 60px 100px 410px 70px 180px;
+  grid-template-columns: 120px 80px 55px 100px 410px 70px 180px;
   gap: 20px;
   margin-left: 20px;
   margin-bottom: 22px;
@@ -162,7 +166,7 @@ export const NewDealHeaderText = styled.span`
 export const NewDealTemplate = styled(GrayBlock)`
   padding: 20px;
   display: grid;
-  grid-template-columns: 120px 80px 60px 100px 410px 70px 180px;
+  grid-template-columns: 120px 80px 55px 100px 410px 70px 180px;
   gap: 20px;
   font-weight: normal;
   align-items: center;
@@ -292,4 +296,67 @@ export const CommentContainer = styled(GrayBlock)`
   textarea {
     color: #fff;
   }
+`;
+
+// history
+
+export const HistoryHeader = styled.div`
+  padding: 0 30px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 25px;
+`;
+
+export const HistoryText = styled.span`
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.4);
+  &:last-of-type {
+    text-align: right;
+  }
+`;
+
+export const DealsList = styled.div`
+  display: grid;
+  gap: 18px;
+  grid-auto-rows: 1fr;
+`;
+
+export const DealContainer = styled(GrayBlock)`
+  padding: 30px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+`;
+
+export const BlueText = styled.span`
+  font-size: 20px;
+  line-height: 125%;
+  color: #00a3ff;
+`;
+
+export const Forecast = styled.div`
+  span:last-of-type {
+    color: #fff;
+    font-size: 15px;
+    margin-left: 1ch;
+  }
+`;
+
+export const Comment = styled.span`
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 153%;
+  color: #ffffff;
+  opacity: 0.4;
+`;
+
+export const Action = styled.span`
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+  text-align: right;
+  text-transform: capitalize;
 `;
