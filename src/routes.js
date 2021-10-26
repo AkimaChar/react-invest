@@ -1,5 +1,6 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
+import Admin from "./pages/Admin";
 import Auth from "./pages/Auth";
 import Coin from "./pages/Coin";
 import TestCoinsList from "./pages/test";
@@ -19,7 +20,7 @@ export const useRoutes = isAuth => {
           <Coin />
         </Route>
         <Route exact path="/admin">
-          admin
+          <Admin />
         </Route>
         <Route exact path="/comments">
           comments

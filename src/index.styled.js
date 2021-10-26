@@ -9,6 +9,7 @@ export const AppContainer = styled.div`
   }
   > div {
     overflow-y: auto;
+    overflow-x: hidden;
     padding: 20px 40px;
   }
 `;
@@ -20,7 +21,6 @@ export const Line = styled.hr`
   margin: ${({ mv }) => mv || 0}px ${({ mh }) => mh || 0}px;
   display: block;
 `;
-
 
 export const Container = styled.div``;
 

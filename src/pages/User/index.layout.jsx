@@ -4,9 +4,9 @@ import Title from "../../components/Title";
 import { ReactComponent as Camera } from "../../assets/camera.svg";
 import Star from "../../assets/star.js";
 import * as U from "./index.styled";
-import { Input } from "antd";
 import { Line, Container } from "../../index.styled";
 import Loader from "../../components/Loader";
+import { Input } from "antd";
 const { TextArea } = Input;
 
 export default function Userlayout({

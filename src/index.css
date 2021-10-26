@@ -91,3 +91,87 @@ textarea.ant-input {
 .success-message-custom .ant-message-notice-content span.anticon {
   color: rgb(79, 214, 52);
 }
+
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  padding: 0;
+  height: 24px;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.ant-select-single.ant-select-show-arrow .ant-select-selection-item {
+  font-size: 17px;
+  line-height: 147%;
+  color: #ffffff;
+  margin-top: -3px;
+}
+
+.ant-select-arrow {
+  color: #00a3ff;
+  font-size: 10px;
+}
+
+.ant-select-dropdown {
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  font-size: 25px;
+  line-height: 120%;
+  color: #ffffff;
+  padding: 0;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.ant-select-item-option {
+  color: #fff;
+}
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  color: #fff;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.ant-input-number {
+  padding: 0;
+  font-size: 17px;
+  line-height: 147%;
+  color: #ffffff;
+  background-color: none;
+  max-width: 80px;
+}
+
+.ant-input-number-input {
+  height: auto;
+  padding: 0;
+  max-width: 70px;
+}
+
+.ant-input-number-handler-wrap {
+  background: none;
+}
+
+.ant-input-number-handler {
+  border: none;
+}
+.ant-input-number-handler-up-inner,
+.ant-input-number-handler-down-inner {
+  color: #00a3ff;
+}
+
+.ant-popover-inner {
+  background-color: transparent;
+  box-shadow: none;
+}
+.ant-popover-inner-content {
+  padding: 0;
+}
+.ant-popover-arrow {
+  display: none;
+}

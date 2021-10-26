@@ -1,16 +1,37 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { io } from "socket.io-client";
 import { updateCoins } from "./redux/slices/coins";
 import SideMenu from "./components/SideMenu.jsx";
 import { useRoutes } from "./routes";
 import { AppContainer } from "./index.styled";
+import { checkAuthorizationService, getUserDataService } from "./services/user";
+import { logOut, updateUserData } from "./redux/slices/user";
+import Loader from "./components/Loader";
 
 export default function App() {
   const socket = useRef(null);
   const dispatch = useDispatch();
-  const { isAuth } = useSelector(state => state.user);
+  const { isAuth, data } = useSelector(state => state.user);
   const routes = useRoutes(isAuth);
+
+  const [loading, setLoading] = useState(true);
+
+  const handleCheckAuth = async () => {
+    const response = await checkAuthorizationService();
+    if (response.status === 401) {
+      setLoading(false);
+      dispatch(logOut());
+    } else if (response.status === 200) {
+      const { data } = await getUserDataService();
+      dispatch(updateUserData(data));
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    handleCheckAuth();
+  }, []);
 
   useEffect(() => {
     if (isAuth) {
@@ -33,7 +54,7 @@ export default function App() {
   return (
     <AppContainer>
       <SideMenu auth={isAuth} />
-      {routes}
+      {loading || (isAuth && !data) ? <Loader /> : routes}
     </AppContainer>
   );
 }

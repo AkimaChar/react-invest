@@ -1,15 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Loader from "../../components/Loader";
-import {
-  logOut,
-  updateUserAvatar,
-  updateUserData,
-} from "../../redux/slices/user";
+import { updateUserAvatar, updateUserData } from "../../redux/slices/user";
 import Userlayout from "./index.layout";
 import {
-  checkAuthorizationService,
-  getUserDataService,
   updateDescriptionPortfolioService,
   updateDescriptionUserService,
   updateUserAvatarService,
@@ -20,7 +13,6 @@ import { errorMessage, successMessage, warningMessage } from "../../utils";
 import { isEmail } from "validator";
 
 export default function User() {
-  const [loading, setLoading] = useState(true);
   const [isUpdatingAvatar, setUpdatingAvatar] = useState(false);
   const dispatch = useDispatch();
   const user = useSelector(state => state.user.data);
@@ -31,18 +23,6 @@ export default function User() {
   const [userDescCount, setUserDescCount] = useState(
     user?.description.length || 0
   );
-
-  const handleCheckAuth = async () => {
-    const response = await checkAuthorizationService();
-    if (response.status === 401) {
-      setLoading(false);
-      dispatch(logOut());
-    } else if (response.status === 200) {
-      const { data } = await getUserDataService();
-      dispatch(updateUserData(data));
-      setLoading(false);
-    }
-  };
 
   const handleUpdateEmail = async e => {
     e.preventDefault();
@@ -142,13 +122,7 @@ export default function User() {
     }
   };
 
-  useEffect(() => {
-    handleCheckAuth();
-  }, []);
-
-  return loading || !user ? (
-    <Loader />
-  ) : (
+  return (
     <Userlayout
       user={user}
       portfolioDescCount={portfolioDescCount}
