@@ -33,7 +33,7 @@ export default function SideMenu({ auth }) {
         <SideBarLink>
           <Link to="/coins">
             <Coins />
-            Trading <br />
+            Trending <br />
             coins
           </Link>
         </SideBarLink>

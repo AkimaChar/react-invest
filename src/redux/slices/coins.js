@@ -7,7 +7,6 @@ const coinsSlice = createSlice({
   },
   reducers: {
     updateCoins: (state, { payload }) => {
-      console.log(payload);
       state.coins = payload;
     },
   },

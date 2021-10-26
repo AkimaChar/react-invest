@@ -1,6 +1,8 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import Auth from "./pages/Auth";
+import Coin from "./pages/Coin";
+import TestCoinsList from "./pages/test";
 import User from "./pages/User";
 
 export const useRoutes = isAuth => {
@@ -11,10 +13,10 @@ export const useRoutes = isAuth => {
           <User />
         </Route>
         <Route exact path="/coins">
-          coins
+          <TestCoinsList />
         </Route>
         <Route exact path="/coins/:coin">
-          user
+          <Coin />
         </Route>
         <Route exact path="/admin">
           admin

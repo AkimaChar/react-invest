@@ -28,7 +28,7 @@ export default function App() {
         socket.current.disconnect();
       };
     }
-  }, []);
+  }, [dispatch, isAuth]);
 
   return (
     <AppContainer>
