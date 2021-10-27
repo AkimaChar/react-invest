@@ -2,10 +2,11 @@ import React from "react";
 import Title from "../../components/Title";
 import { Container } from "../../index.styled";
 import * as A from "./index.styled";
-import { Dropdown, InputNumber, Select, Input, Popover } from "antd";
+import { Dropdown, InputNumber, Input, Popover, Modal } from "antd";
 import { ReactComponent as Comment } from "../../assets/comm.svg";
+import { ReactComponent as Arrow } from "../../assets/arrow.svg";
 import { Link } from "react-router-dom";
-const { Option } = Select;
+import useWindowSize from "../../hooks/use-window-size";
 const { TextArea } = Input;
 
 export default function AdminLayout({
@@ -23,9 +24,30 @@ export default function AdminLayout({
   isCommentTextareaVisible,
   handleVisibleCommentTextarea,
   deals,
+  isForecastModalVisible,
+  showModal,
+  closeModal,
 }) {
+  const { width } = useWindowSize();
   return (
     <Container>
+      <Modal
+        title={false}
+        footer={false}
+        visible={isForecastModalVisible}
+        closable={false}
+        onCancel={closeModal}
+        centered
+      >
+        <A.NewDeal_ForecastModal>
+          {forecastBody(
+            handleUpdateTime,
+            newDeal,
+            handleUpdateBehavior,
+            handleUpdateValue
+          )}
+        </A.NewDeal_ForecastModal>
+      </Modal>
       <Title mb={10}>Admin Page</Title>
       <A.Header>
         <A.PortfolioStatisticContainer>
@@ -80,6 +102,7 @@ export default function AdminLayout({
           </A.NewDeal_Coin>
           <A.NewDeal_Price>{activeCoin?.price || 0}$</A.NewDeal_Price>
           <A.NewDeal_Qty>
+            {width < 1230 && <A.NewDeal_Title>Qty</A.NewDeal_Title>}
             <InputNumber
               value={newDeal.qty || "Edit"}
               bordered={false}
@@ -93,78 +116,57 @@ export default function AdminLayout({
           <A.NewDeal_Sum>
             {activeCoin ? newDeal.qty * activeCoin.price : 0}$
           </A.NewDeal_Sum>
-          <A.NewDeal_Forecast>
-            <Select
-              onChange={handleUpdateTime}
-              bordered={false}
-              defaultValue={newDeal.time}
+          {width > 1230 ? (
+            <A.NewDeal_Forecast>
+              {forecastBody(
+                handleUpdateTime,
+                newDeal,
+                handleUpdateBehavior,
+                handleUpdateValue
+              )}
+            </A.NewDeal_Forecast>
+          ) : (
+            <A.NewDeal_ForecastMobile>
+              <A.NewDeal_Title>Forecast</A.NewDeal_Title>
+              <A.NewDeal_Qty onClick={showModal}>Edit</A.NewDeal_Qty>
+            </A.NewDeal_ForecastMobile>
+          )}
+          {width > 1230 ? (
+            <Popover
+              content={
+                <A.CommentContainer>
+                  <TextArea
+                    placeholder="Deal comment"
+                    autoSize={{ minRows: 2 }}
+                    bordered={false}
+                    maxLength={50}
+                    autoFocus
+                    onChange={handleUpdateComment}
+                  />
+                </A.CommentContainer>
+              }
+              trigger="click"
+              placement="bottomRight"
+              title={false}
+              visible={isCommentTextareaVisible}
+              onVisibleChange={handleVisibleCommentTextarea}
             >
-              <Option value="week">week</Option>
-              <Option value="month">month</Option>
-              <Option value="quarter">quarter</Option>
-              <Option value="year">year</Option>
-            </Select>
-            <A.NewDeal_RadioGroup>
-              <div>
-                <input
-                  type="radio"
-                  name="behavior"
-                  id="increase"
-                  value="increase"
-                  defaultChecked
-                  onChange={handleUpdateBehavior}
-                />
-                <A.NewDeal_RadioButton htmlFor="increase">
-                  Increase
-                </A.NewDeal_RadioButton>
-              </div>
-              <A.RadioGroupDivider>/</A.RadioGroupDivider>
-              <div>
-                <input
-                  type="radio"
-                  name="behavior"
-                  id="decrease"
-                  value="decrease"
-                  onChange={handleUpdateBehavior}
-                />
-                <A.NewDeal_RadioButton htmlFor="decrease">
-                  Decrease
-                </A.NewDeal_RadioButton>
-              </div>
-            </A.NewDeal_RadioGroup>
-            <InputNumber
-              defaultValue={15}
-              bordered={false}
-              formatter={value => `${value}%`}
-              parser={value => value.replace("%", "")}
-              max={2000}
-              min={1}
-              onChange={handleUpdateValue}
-            />
-          </A.NewDeal_Forecast>
-          <Popover
-            content={
-              <A.CommentContainer>
-                <TextArea
-                  placeholder="Deal comment"
-                  autoSize={{ minRows: 2 }}
-                  bordered={false}
-                  maxLength={50}
-                  autoFocus
-                  onChange={handleUpdateComment}
-                />
-              </A.CommentContainer>
-            }
-            trigger="click"
-            placement="bottomRight"
-            title={false}
-            visible={isCommentTextareaVisible}
-            onVisibleChange={handleVisibleCommentTextarea}
-          >
-            <A.CommentButton>
-              <Comment />
-            </A.CommentButton>
-          </Popover>
+              <A.CommentButton>
+                <Comment />
+              </A.CommentButton>
+            </Popover>
+          ) : (
+            <A.NewDeal_CommentRow>
+              <A.NewDeal_Title>Comment</A.NewDeal_Title>
+              <TextArea
+                placeholder="Deal comment"
+                autoSize={{ minRows: 2 }}
+                bordered={false}
+                maxLength={50}
+                onChange={handleUpdateComment}
+              />
+            </A.NewDeal_CommentRow>
+          )}
           <A.NewDeal_Action>
             <A.NewDeal_RadioButton onClick={() => handleChooseAction("buy")}>
               buy
@@ -203,11 +205,107 @@ export default function AdminLayout({
               </A.BlueText>
               <span>per {deal.time}</span>
             </A.Forecast>
-            <A.Comment>{deal.comment.content}</A.Comment>
-            <A.Action>{deal.type}</A.Action>
+            <A.Comment>
+              {width <= 870 && (
+                <A.NewDeal_Title>Forecast comment</A.NewDeal_Title>
+              )}
+              {deal.comment.content}
+            </A.Comment>
+            <A.Action>
+              {width <= 870 && (
+                <A.NewDeal_Title>Forecast action</A.NewDeal_Title>
+              )}
+              {deal.type}
+            </A.Action>
           </A.DealContainer>
         ))}
       </A.DealsList>
     </Container>
   );
 }
+
+const forecastBody = (
+  handleUpdateTime,
+  newDeal,
+  handleUpdateBehavior,
+  handleUpdateValue
+) => (
+  <>
+    <Dropdown
+      overlay={() => (
+        <A.NewDeal_TimeContainer>
+          <A.NewDeal_TimeItem
+            onClick={() => handleUpdateTime("week")}
+            active={newDeal.time === "week"}
+          >
+            week
+          </A.NewDeal_TimeItem>
+          <A.NewDeal_TimeItem
+            onClick={() => handleUpdateTime("month")}
+            active={newDeal.time === "month"}
+          >
+            month
+          </A.NewDeal_TimeItem>
+          <A.NewDeal_TimeItem
+            onClick={() => handleUpdateTime("quarter")}
+            active={newDeal.time === "quarter"}
+          >
+            quarter
+          </A.NewDeal_TimeItem>
+          <A.NewDeal_TimeItem
+            onClick={() => handleUpdateTime("year")}
+            active={newDeal.time === "year"}
+          >
+            year
+          </A.NewDeal_TimeItem>
+        </A.NewDeal_TimeContainer>
+      )}
+      trigger={["click"]}
+      placement="bottomRight"
+    >
+      <A.NewDeal_TimeLabel>
+        <A.NewDeal_Time>{newDeal.time}</A.NewDeal_Time>
+        <Arrow />
+      </A.NewDeal_TimeLabel>
+    </Dropdown>
+    <A.NewDeal_RadioGroup>
+      <div>
+        <input
+          type="radio"
+          name="behavior"
+          id="increase"
+          value="increase"
+          defaultChecked
+          onChange={handleUpdateBehavior}
+        />
+        <A.NewDeal_RadioButton htmlFor="increase">
+          Increase
+        </A.NewDeal_RadioButton>
+      </div>
+      <A.RadioGroupDivider>/</A.RadioGroupDivider>
+      <div>
+        <input
+          type="radio"
+          name="behavior"
+          id="decrease"
+          value="decrease"
+          onChange={handleUpdateBehavior}
+        />
+        <A.NewDeal_RadioButton htmlFor="decrease">
+          Decrease
+        </A.NewDeal_RadioButton>
+      </div>
+    </A.NewDeal_RadioGroup>
+    <A.NewDeal_Value>
+      <InputNumber
+        defaultValue={15}
+        bordered={false}
+        formatter={value => `${value}%`}
+        parser={value => value.replace("%", "")}
+        max={2000}
+        min={1}
+        onChange={handleUpdateValue}
+      />
+    </A.NewDeal_Value>
+  </>
+);

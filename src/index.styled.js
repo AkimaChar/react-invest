@@ -12,6 +12,16 @@ export const AppContainer = styled.div`
     overflow-x: hidden;
     padding: 20px 40px;
   }
+  @media (max-width: 768px) {
+    height: auto;
+    display: block;
+    > * {
+      height: auto;
+    }
+    > div {
+      padding: 20px 17px;
+    }
+  }
 `;
 
 export const Line = styled.hr`

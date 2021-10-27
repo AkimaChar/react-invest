@@ -35,7 +35,7 @@ textarea {
   outline: none;
 }
 
-#root > div {
+#root {
   background-image: url("./style/img/bg.png");
   background-position: center top;
   background-size: cover;
@@ -92,66 +92,21 @@ textarea.ant-input {
   color: rgb(79, 214, 52);
 }
 
-.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
-  padding: 0;
-  height: 24px;
-  padding-right: 10px;
-  text-align: right;
-}
-
-.ant-select-single.ant-select-show-arrow .ant-select-selection-item {
-  font-size: 17px;
-  line-height: 147%;
-  color: #ffffff;
-  margin-top: -3px;
-}
-
-.ant-select-arrow {
-  color: #00a3ff;
-  font-size: 10px;
-}
-
-.ant-select-dropdown {
-  box-shadow: none;
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(20px);
-  border-radius: 12px;
-  font-size: 25px;
-  line-height: 120%;
-  color: #ffffff;
-  padding: 0;
-  overflow: hidden;
-  width: fit-content;
-}
-
-.ant-select-item-option {
-  color: #fff;
-}
-
-.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
-  color: #fff;
-  font-weight: 500;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.ant-select-item-option-active:not(.ant-select-item-option-disabled) {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
 .ant-input-number {
   padding: 0;
-  font-size: 17px;
-  line-height: 147%;
-  color: #ffffff;
+  font-size: inherit;
+  line-height: inherit;
+  color: #fff;
   background-color: none;
   width: 100%;
-  max-width: 80px;
+  max-width: none;
 }
 
 .ant-input-number-input {
   height: auto;
   padding: 0;
-  max-width: 70px;
+  max-width: none;
+  width: 100%;
 }
 
 .ant-input-number-handler-wrap {
@@ -175,4 +130,26 @@ textarea.ant-input {
 }
 .ant-popover-arrow {
   display: none;
+}
+
+.ant-modal-content {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+}
+.ant-modal-body {
+  padding: 0;
+}
+
+.ant-drawer-content {
+  background: linear-gradient(287.67deg, #2c4b5c 3.66%, #1d1b24 86.16%);
+}
+.ant-drawer-close {
+  color: #fff;
+  font-size: 25px;
+}
+
+a:hover {
+  color: inherit;
 }

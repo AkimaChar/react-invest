@@ -10,7 +10,7 @@ export const useRoutes = isAuth => {
   if (isAuth) {
     return (
       <Switch>
-        <Route exact path="/user">
+        <Route exact path="/">
           <User />
         </Route>
         <Route exact path="/coins">
@@ -25,7 +25,7 @@ export const useRoutes = isAuth => {
         <Route exact path="/comments">
           comments
         </Route>
-        <Redirect to="/user" />
+        <Redirect to="/" />
       </Switch>
     );
   }

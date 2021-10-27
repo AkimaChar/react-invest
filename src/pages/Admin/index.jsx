@@ -12,6 +12,7 @@ export default function Admin() {
   const [coinsList, setCoinsList] = useState();
   const [activeCoin, setActiveCoin] = useState();
   const [isCommentTextareaVisible, setCommentTextareaVisible] = useState(false);
+  const [isForecastModalVisible, setForecastModalVisible] = useState(false);
   const [newDeal, setNewDeal] = useState({
     qty: 0,
     value: 15,
@@ -20,6 +21,13 @@ export default function Admin() {
     behavior: "increase",
     comment: "",
   });
+
+  const showModal = () => {
+    setForecastModalVisible(true);
+  };
+  const closeModal = () => {
+    setForecastModalVisible(false);
+  };
 
   const updateNewDeal = pair => {
     setNewDeal(props => {
@@ -78,7 +86,7 @@ export default function Admin() {
       const { data } = await createDealService({
         coin: activeCoin?.name,
         count: newDeal.qty,
-        type: newDeal.type,
+        type: type,
         value:
           newDeal.behavior === "decrease" ? newDeal.value * -1 : newDeal.value,
         time: newDeal.time,
@@ -113,6 +121,9 @@ export default function Admin() {
       handleVisibleCommentTextarea={handleVisibleCommentTextarea}
       handleUpdateComment={handleUpdateComment}
       deals={portfolio.deals}
+      isForecastModalVisible={isForecastModalVisible}
+      showModal={showModal}
+      closeModal={closeModal}
     />
   ) : (
     <Loader />

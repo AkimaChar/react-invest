@@ -15,11 +15,17 @@ const Line = styled.hr`
 const Text = styled.h1`
   font-weight: 300;
   font-size: 50px;
-  line-height: 85px;
+  line-height: 170%;
   letter-spacing: 0.05em;
   color: #ffffff;
   margin: 0;
-  font-family: 'Rany';
+  font-family: "Rany";
+  @media (max-width: 1420px) {
+    font-size: 40px;
+  }
+  @media (max-width: 680px) {
+    font-size: 8.7vw;
+  }
 `;
 
 export default function Title({ children, mb = 0 }) {
