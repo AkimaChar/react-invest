@@ -39,7 +39,7 @@ const renderForecast = (forecast, type) => {
   return (
     <C.ForecastValue value={forecast[type]}>
       {forecast[type] > 0 && "+"}
-      {forecast[type]}%
+      {forecast[type].toFixed(0)}%
     </C.ForecastValue>
   );
 };

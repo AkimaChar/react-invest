@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { compareDesc } from "date-fns";
 
 const userSlice = createSlice({
   name: "user",
@@ -19,7 +20,7 @@ const userSlice = createSlice({
       state.data = payload;
       state.data.portfolio.deals = state.data.portfolio.deals
         .sort((a, b) => {
-          return new Date(b.created) - new Date(a.created);
+          return compareDesc(new Date(b.created), new Date(a.created));
         })
         .reverse();
     },
@@ -27,12 +28,8 @@ const userSlice = createSlice({
       state.data.avatar = payload;
     },
     updateUserDeals: (state, { payload }) => {
-      state.data.portfolio.deals.push(payload);
-      state.data.portfolio.deals = state.data.portfolio.deals
-        .sort((a, b) => {
-          return new Date(b.created) - new Date(a.created);
-        })
-        .reverse();
+      console.log(payload);
+      state.data.portfolio.deals.unshift(payload);
     },
   },
 });

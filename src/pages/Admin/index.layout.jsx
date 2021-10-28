@@ -23,7 +23,7 @@ export default function AdminLayout({
   handleUpdateComment,
   isCommentTextareaVisible,
   handleVisibleCommentTextarea,
-  deals,
+  portfolio,
   isForecastModalVisible,
   showModal,
   closeModal,
@@ -187,7 +187,7 @@ export default function AdminLayout({
         <A.HistoryText>Action</A.HistoryText>
       </A.HistoryHeader>
       <A.DealsList>
-        {deals.map(deal => (
+        {portfolio.deals.map(deal => (
           <A.DealContainer key={deal._id}>
             <Link to={`/coins/${deal.coin.name}`}>
               <A.NewDeal_Coin>

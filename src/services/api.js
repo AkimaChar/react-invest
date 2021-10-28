@@ -16,6 +16,7 @@ instance.interceptors.request.use(function (config) {
 });
 
 instance.interceptors.response.use(data => {
+  console.log('wait response..');
   if (data.status === 401) {
     console.log("NOT AUTH");
   }

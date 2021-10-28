@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import Loader from "../../components/Loader";
 import { errorMessage, successMessage, warningMessage } from "../../utils";
 import AdminLayout from "./index.layout";
@@ -9,6 +9,7 @@ import { updateUserDeals } from "../../redux/slices/user";
 export default function Admin() {
   const { coins } = useSelector(state => state.coins);
   const { portfolio } = useSelector(state => state.user.data);
+  const dispatch = useDispatch();
   const [coinsList, setCoinsList] = useState();
   const [activeCoin, setActiveCoin] = useState();
   const [isCommentTextareaVisible, setCommentTextareaVisible] = useState(false);
@@ -95,7 +96,7 @@ export default function Admin() {
       if (data.error) {
         errorMessage(data.error);
       } else {
-        updateUserDeals(data);
+        dispatch(updateUserDeals(data));
         successMessage("Deal created");
       }
     }
@@ -120,7 +121,7 @@ export default function Admin() {
       isCommentTextareaVisible={isCommentTextareaVisible}
       handleVisibleCommentTextarea={handleVisibleCommentTextarea}
       handleUpdateComment={handleUpdateComment}
-      deals={portfolio.deals}
+      portfolio={portfolio}
       isForecastModalVisible={isForecastModalVisible}
       showModal={showModal}
       closeModal={closeModal}
