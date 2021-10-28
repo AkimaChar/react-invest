@@ -4,6 +4,7 @@ import Admin from "./pages/Admin";
 import Auth from "./pages/Auth";
 import Coin from "./pages/Coin";
 import TestCoinsList from "./pages/test";
+import TrendingCoins from "./pages/TrendingCoins";
 import User from "./pages/User";
 
 export const useRoutes = isAuth => {
@@ -14,7 +15,7 @@ export const useRoutes = isAuth => {
           <User />
         </Route>
         <Route exact path="/coins">
-          <TestCoinsList />
+          <TrendingCoins />
         </Route>
         <Route exact path="/coins/:coin">
           <Coin />

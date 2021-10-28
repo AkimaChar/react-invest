@@ -315,58 +315,6 @@ export const NewDealTemplate = styled(GrayBlock)`
   }
 `;
 
-export const NewDeal_Coin = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-direction: row;
-  justify-content: flex-start;
-  @media (max-width: 680px) {
-    gap: 2.2vw;
-  }
-`;
-
-export const NewDeal_CoinLogo = styled.div`
-  width: 47px;
-  height: 47px;
-  border-radius: 50%;
-  background: ${({ coin }) =>
-    coin ? "transparent" : "rgba(255, 255, 255, 0.04)"};
-  img {
-    width: 100%;
-    height: 100%;
-  }
-  @media (max-width: 1420px) {
-    width: 35px;
-    height: 35px;
-  }
-  @media (max-width: 1420px) {
-    width: 47px;
-    height: 47px;
-  }
-  @media (max-width: 680px) {
-    width: 10.2vw;
-    height: 10.2vw;
-  }
-`;
-
-export const NewDeal_CoinName = styled.span`
-  font-size: 20px;
-  line-height: 120%;
-  color: #ffffff;
-  opacity: 0.5;
-  text-transform: uppercase;
-  @media (max-width: 1420px) {
-    font-size: 16px;
-  }
-  @media (max-width: 1420px) {
-    font-size: 20px;
-  }
-  @media (max-width: 680px) {
-    font-size: 4.4vw;
-  }
-`;
-
 export const NewDeal_Price = styled.span`
   font-size: 17px;
   line-height: 147%;

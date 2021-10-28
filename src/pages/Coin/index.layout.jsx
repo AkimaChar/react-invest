@@ -23,12 +23,13 @@ export default function CoinLayout({ coin }) {
         </div>
       </C.HeaderInfo>
       <C.ForecastBlock>
-        {Object.keys(coin.forecast).map(type => (
-          <C.ForecastColumn>
-            {renderForecast(coin.forecast, type)}
-            <C.ForecastText>Forecast for the {type}</C.ForecastText>
-          </C.ForecastColumn>
-        ))}
+        {coin.forecast &&
+          Object.keys(coin.forecast).map(type => (
+            <C.ForecastColumn>
+              {renderForecast(coin.forecast, type)}
+              <C.ForecastText>Forecast for the {type}</C.ForecastText>
+            </C.ForecastColumn>
+          ))}
       </C.ForecastBlock>
       <Footer />
     </Container>

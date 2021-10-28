@@ -1,6 +1,11 @@
 import React from "react";
 import Title from "../../components/Title";
-import { Container } from "../../index.styled";
+import {
+  CoinBlock,
+  CoinBlock_Logo,
+  CoinBlock_Name,
+  Container,
+} from "../../index.styled";
 import * as A from "./index.styled";
 import { Dropdown, InputNumber, Input, Popover, Modal } from "antd";
 import { ReactComponent as Comment } from "../../assets/comm.svg";
@@ -92,14 +97,14 @@ export default function AdminLayout({
           <A.NewDealHeaderText>Comment</A.NewDealHeaderText>
         </A.NewDealHeader>
         <A.NewDealTemplate>
-          <A.NewDeal_Coin>
-            <A.NewDeal_CoinLogo coin={!!activeCoin}>
+          <CoinBlock>
+            <CoinBlock_Logo coin={!!activeCoin}>
               {!!activeCoin && (
                 <img src={activeCoin.logo} alt={activeCoin.short_name} />
               )}
-            </A.NewDeal_CoinLogo>
-            <A.NewDeal_CoinName>{activeCoin?.short_name}</A.NewDeal_CoinName>
-          </A.NewDeal_Coin>
+            </CoinBlock_Logo>
+            <CoinBlock_Name>{activeCoin?.short_name}</CoinBlock_Name>
+          </CoinBlock>
           <A.NewDeal_Price>{activeCoin?.price || 0}$</A.NewDeal_Price>
           <A.NewDeal_Qty>
             {width < 1230 && <A.NewDeal_Title>Qty</A.NewDeal_Title>}
@@ -190,12 +195,12 @@ export default function AdminLayout({
         {portfolio.deals.map(deal => (
           <A.DealContainer key={deal._id}>
             <Link to={`/coins/${deal.coin.name}`}>
-              <A.NewDeal_Coin>
-                <A.NewDeal_CoinLogo coin>
+              <CoinBlock>
+                <CoinBlock_Logo coin>
                   <img src={deal.coin.logo} alt={deal.coin.short_name} />
-                </A.NewDeal_CoinLogo>
-                <A.NewDeal_CoinName>{deal.coin.short_name}</A.NewDeal_CoinName>
-              </A.NewDeal_Coin>
+                </CoinBlock_Logo>
+                <CoinBlock_Name>{deal.coin.short_name}</CoinBlock_Name>
+              </CoinBlock>
             </Link>
             <A.BlueText>{deal.coin.price}$</A.BlueText>
             <A.Forecast>

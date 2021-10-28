@@ -1,3 +1,10 @@
-import API from './api'
+import API from "./api";
 
-export const getAllCoinsService = async ()
+export const getTrendingCoinsService = async range => {
+  try {
+    const response = await API.get(`/coins/trending/${range}`);
+    return response;
+  } catch (error) {
+    return error.response;
+  }
+};

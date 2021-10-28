@@ -28,7 +28,6 @@ const userSlice = createSlice({
       state.data.avatar = payload;
     },
     updateUserDeals: (state, { payload }) => {
-      console.log(payload);
       state.data.portfolio.deals.unshift(payload);
     },
   },
